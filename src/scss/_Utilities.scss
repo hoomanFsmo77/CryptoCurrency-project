@@ -1,6 +1,110 @@
 @import "Variables";
 @import "Mixins";
-
+//////////////////
+body{
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+p{
+  margin: 0.5rem;
+  line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  line-height: 1.8;
+}
+/////////////////// buttons
+%btn{
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  width: 125px;
+  height: 40px;
+  color: #151515;
+  border: none;
+  cursor: pointer;
+}
+button,a{
+  @extend %btn;
+  &::before,&::after{
+    --size:calc(100% + 15px);
+    content: '';
+    position: absolute;
+    inset: 50% 0 0 50%;
+    pointer-events: none;
+    transition: scale 0.35s;
+    translate: -50% -50%;
+  }
+  &::before{
+    width: var(--size);
+    height: 100%;
+    border-top: 2px solid ;
+    border-bottom: 2px solid ;
+    scale: .25 1;
+  }
+  &::after{
+    width: 99%;
+    height: var(--size);
+    border-right: 2px solid ;
+    border-left: 2px solid ;
+    scale: 1 .25;
+  }
+  &:hover::before,&:hover::after{
+    opacity: 1;
+    scale: 1;
+    border-radius: 3px;
+  }
+}
+a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+button.border-dark,a.border-dark{
+  &::before{
+    border-top-color: $dark;
+    border-bottom-color: $dark;
+  }
+  &::after{
+    border-right-color: $dark;
+    border-left-color: $dark;
+  }
+}
+////////////////////// colors
+.bg-primary{
+  background: $primary;
+}
+.text-primary{
+  color: $primary;
+}
+///////////////////////////
+.container{
+  width: calc(100% - 15rem);
+  margin: auto;
+}
+@include query(xlg){
+  .container{
+    width: calc(100% - 10rem);
+  }
+}
+@include query(lg){
+  .container{
+    width: calc(100% - 5rem);
+  }
+}
+@include query(md){
+  .container{
+    width: calc(100% - 2rem);
+  }
+}
+@include query(sm){
+  .container{
+    width: 100%;
+  }
+}
 ///// margin
 $m:0;$c:0;
 @while($m < 7){
@@ -156,7 +260,18 @@ $wd:0.1;$cf:10;
 .d-inline-block{
   display: inline-block!important;
 }
-
+///////////////// display grid
+.d-grid{
+  display: grid!important;
+  display: -moz-grid!important;
+  display: -ms-grid!important;
+}
+@for $counter from 1 through 8{
+  .grid-#{$counter}{
+      grid-template-columns: repeat($counter,1fr) !important;
+  }
+  $counter:$counter+1
+}
 ////////////////// media
 @include query(sm){ ///// max-width:500px
   .d-sm-none{
@@ -207,6 +322,12 @@ $wd:0.1;$cf:10;
   .align-sm-end{
     align-items: end!important;
     -webkit-align-items: flex-end!important;
+  }
+  @for $counter from 1 through 8{
+    .grid-sm-#{$counter}{
+      grid-template-columns: repeat($counter,1fr) !important;
+    }
+    $counter:$counter+1
   }
 
 }
@@ -259,6 +380,12 @@ $wd:0.1;$cf:10;
   .align-md-end{
     align-items: end!important;
     -webkit-align-items: flex-end!important;
+  }
+  @for $counter from 1 through 8{
+    .grid-md-#{$counter}{
+      grid-template-columns: repeat($counter,1fr) !important;
+    }
+    $counter:$counter+1
   }
 }
 
@@ -313,6 +440,12 @@ $wd:0.1;$cf:10;
     align-items: end!important;
     -webkit-align-items: flex-end!important;
   }
+  @for $counter from 1 through 8{
+    .grid-lg-#{$counter}{
+      grid-template-columns: repeat($counter,1fr)!important;
+    }
+    $counter:$counter+1
+  }
 }
 
 @include query(xlg){ ///// max-width:1200px
@@ -366,4 +499,11 @@ $wd:0.1;$cf:10;
     align-items: end!important;
     -webkit-align-items: flex-end!important;
   }
+  @for $counter from 1 through 8{
+    .grid-xlg-#{$counter}{
+      grid-template-columns: repeat($counter,1fr);
+    }
+    $counter:$counter+1
+  }
 }
+
