@@ -2,15 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Multi Coin</title>
+    <title>MultiCoin Weblog</title>
     <link rel="icon" href="./assets/title_logo_sm.png" >
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="welcome Multi Coin website">
     <meta name="keyword" content="HTML,CSS,Js developer">
+    <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<nav id="top_nav" class="d-block d-lg-none">
+    <div class="container px-1 pb-1 d-flex justify-between align-center">
+        <div class="left_side">
+            <ul class="d-flex gap-2 m-0 p-0">
+                <li class="p-3 relative "><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">About</a></li>
+                <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Forum</a></li>
+                <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Buy now!</a></li>
+                <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Login/Join</a></li>
+            </ul>
+        </div>
+        <div class="d-flex gap-4 align-center right_side" x-data="{isRight:false}">
+            <div class="dark_switcher relative" @click="isRight=!isRight">
+                <i  @click.stop="isRight=!isRight"  :style="isRight && {left:'29px',animation:'rotate 130ms linear 80ms'}" class="fa-solid fa-sun" :class="isRight && 'changeToMoon'"></i>
+            </div>
+            <ul class="d-flex gap-2 m-0 p-0">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 
 
