@@ -1,0 +1,20 @@
+@import "Mixins";
+@import "Variables";
+@include query(sm){ ////max-width: 500px
+
+}
+
+@include query(md){  ////max-width: 768px
+
+}
+
+
+
+@include query(lg){ ////max-width: 960px
+
+}
+
+
+@include query(xlg){ ////max-width: 1200px
+
+}
