@@ -9,7 +9,7 @@
     <meta name="description" content="welcome Multi Coin website">
     <meta name="keyword" content="HTML,CSS,Js developer">
     <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
-<script defer src="bundleffcdaad7aa4405499371.js"></script><link href="css/bundle63271d7dc5626d3d572f.css" rel="stylesheet"></head>
+<script defer src="bundlea358f73b0c255a4931a8.js"></script><link href="css/bundle63271d7dc5626d3d572f.css" rel="stylesheet"></head>
 <body>
 
 <nav id="top_nav" class="d-block d-lg-none">
@@ -22,7 +22,7 @@
                 <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Login/Join</a></li>
             </ul>
         </div>
-        <div class="d-flex gap-4 align-center right_side" x-data="{isRight:false}">
+        <div class="d-flex gap-4 align-center right_side" x-data="{isRight:$persist(false)}" >
             <div class="dark_switcher relative" @click="isRight=!isRight">
                 <i  @click.stop="isRight=!isRight"  :style="isRight && {left:'29px',animation:'rotate 130ms linear 80ms'}" class="fa-solid fa-sun" :class="isRight && 'changeToMoon'"></i>
             </div>
