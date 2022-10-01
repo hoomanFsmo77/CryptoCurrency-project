@@ -21,6 +21,10 @@ a {
   color: #333;
 }
 
+::placeholder {
+  font-size: 1rem;
+}
+
 button.btn, a.btn {
   font-size: 1rem;
   position: relative;
@@ -77,12 +81,62 @@ button.border-dark::after, a.border-dark::after {
   border-left-color: #333;
 }
 
+button.btn-sm, a.btn-sm {
+  font-size: 0.9rem !important;
+  width: 104px !important;
+  height: 34px !important;
+}
+
 .bg-primary {
-  background: rgb(41, 171, 225);
+  background: rgb(41, 171, 225) !important;
 }
 
 .text-primary {
-  color: rgb(41, 171, 225);
+  color: rgb(41, 171, 225) !important;
+}
+
+.bg-primary-op2 {
+  background: rgba(41, 171, 225, 0.2);
+}
+
+.text-primary-op2 {
+  color: rgba(41, 171, 225, 0.2);
+}
+
+.bg-info {
+  background: #f27059 !important;
+}
+
+.text-info {
+  color: #f27059 !important;
+}
+
+.bg-light {
+  background: #fff !important;
+}
+
+.text-light {
+  color: #fff !important;
+}
+
+.bg-success {
+  background: #57cc99;
+}
+
+.text-success {
+  color: #57cc99;
+}
+
+.text-muted {
+  color: rgb(89, 93, 105) !important;
+}
+
+.bg-warning {
+  background: #f2a65a;
+}
+
+.text-warning {
+  color: #f2a65a;
 }
 
 .container {
@@ -1894,6 +1948,10 @@ button.border-dark::after, a.border-dark::after {
   font-size: 7.5rem !important;
 }
 
+.fs-09 {
+  font-size: 0.9rem !important;
+}
+
 .fw-1 {
   font-weight: 100 !important;
 }
@@ -2470,8 +2528,46 @@ button.border-dark::after, a.border-dark::after {
     grid-template-columns: repeat(8, 1fr);
   }
 }
+.blue_hover *, .blue_hover {
+  transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  -webkit-transition: all 150ms linear;
+}
+
+.blue_hover:hover, .blue_hover:hover * {
+  color: rgb(41, 171, 225);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+  transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  -webkit-transition: all 150ms linear;
+}
+
+input.border-success {
+  border-bottom: 2px solid rgba(87, 204, 153, 0.4);
+}
+input.border-success:focus {
+  border-bottom-color: #57cc99;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
 * {
   font-family: "Roboto Slab", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -2493,7 +2589,7 @@ body {
 #top_nav .left_side li span {
   z-index: 1;
   height: 0;
-  background: rgb(41, 171, 225);
+  background: rgba(41, 171, 225, 0.2);
   transition: all 150ms linear;
   -moz-transition: all 150ms linear;
   -ms-transition: all 150ms linear;
@@ -2671,5 +2767,88 @@ i.changeToMoon::before {
   100% {
     transform: rotate(360deg);
   }
+}
+#main_menu .menu_item {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#main_menu .brand_logo {
+  cursor: pointer;
+}
+#main_menu .canvas_menu {
+  width: 30px;
+  height: auto;
+  gap: 0.3rem;
+  transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  -webkit-transition: all 150ms linear;
+}
+#main_menu .canvas_menu:hover span {
+  background: rgb(41, 171, 225);
+}
+#main_menu .canvas_menu span {
+  height: 3px;
+  background: #333;
+  border-radius: 15px;
+  display: inline-block;
+}
+#main_menu .canvas_menu span:nth-child(odd) {
+  width: 100%;
+}
+#main_menu .canvas_menu span:nth-child(even) {
+  width: 50%;
+}
+#main_menu .search_bar {
+  display: flex;
+  width: 307px;
+  height: 56px;
+  right: -8px;
+  background: #fff;
+  bottom: -71px;
+  box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+
+#canvas {
+  overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+  width: 350px;
+  top: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99999;
+  transform: translateX(1000px);
+  -ms-transform: translateX(1000px);
+  transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+}
+#canvas ul li a {
+  font-size: 1.3rem;
+}
+#canvas .premium {
+  border-radius: 5px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
 }
 

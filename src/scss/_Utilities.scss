@@ -19,6 +19,9 @@ a{
   text-decoration: none;
   color: $dark;
 }
+::placeholder{
+  font-size: 1rem;
+}
 /////////////////// buttons
 %btn{
   font-size: 1rem;
@@ -77,12 +80,52 @@ button.border-dark,a.border-dark{
     border-left-color: $dark;
   }
 }
+
+button.btn-sm,a.btn-sm{
+  font-size: 0.9rem!important;
+  width: 104px!important;
+  height: 34px!important;
+}
 ////////////////////// colors
+
 .bg-primary{
-  background: $primary;
+  background: $primary!important;
 }
 .text-primary{
-  color: $primary;
+  color: $primary!important;
+}
+.bg-primary-op2{
+  background: $primary_op2;
+}
+.text-primary-op2{
+  color: $primary_op2;
+}
+.bg-info{
+  background: $info!important;
+}
+.text-info{
+  color: $info!important;
+}
+.bg-light{
+  background: $light!important;
+}
+.text-light{
+  color: $light!important;
+}
+.bg-success{
+  background: $success;
+}
+.text-success{
+  color: $success;
+}
+.text-muted{
+  color: $secondary!important;
+}
+.bg-warning{
+  background: $warning;
+}
+.text-warning{
+  color: $warning;
 }
 ///////////////////////////
 .container{
@@ -175,6 +218,9 @@ $fs:0.5;$of:1;
   }
   $fs:$fs+0.5;
   $of:$of +1
+}
+.fs-09{
+  font-size: 0.9rem!important;
 }
 //////// font wight
 $fw:100;$cw:1;
@@ -522,4 +568,30 @@ $wd:0.1;$cf:10;
     $counter:$counter+1
   }
 }
-
+/////////////// hover
+.blue_hover *,.blue_hover{
+  @include transition(all 150ms linear);
+}
+.blue_hover:hover ,.blue_hover:hover *{
+  color: $primary;
+}
+/////////// cursor
+.pointer{
+  cursor: pointer;
+}
+////////////// input
+input{
+  border: none;
+  outline: none;
+  @include transition(all 150ms linear);
+}
+input.border-success{
+  border-bottom: 2px solid rgba(87, 204, 153, 0.4);
+  &:focus{
+    border-bottom-color:$success ;
+  }
+}
+//////////////////
+.text-center{
+  text-align: center!important;
+}

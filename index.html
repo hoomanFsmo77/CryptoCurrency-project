@@ -9,33 +9,149 @@
     <meta name="description" content="welcome Multi Coin website">
     <meta name="keyword" content="HTML,CSS,Js developer">
     <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
+<header>
+    <nav id="top_nav" class="d-block d-lg-none">
+        <div class="container px-1 pb-1 d-flex justify-between align-center">
+            <div class="left_side">
+                <ul class="d-flex gap-2 m-0 p-0">
+                    <li class="p-3 relative "><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">About</a></li>
+                    <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Forum</a></li>
+                    <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Buy now!</a></li>
+                    <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Login/Join</a></li>
+                </ul>
+            </div>
+            <div class="d-flex gap-4 align-center right_side" x-data="{isRight:$persist(false)}" >
+                <div class="dark_switcher relative" @click="isRight=!isRight">
+                    <i  @click.stop="isRight=!isRight"  :style="isRight && {left:'29px',animation:'rotate 130ms linear 80ms'}" class="fa-solid fa-sun" :class="isRight && 'changeToMoon'"></i>
+                </div>
+                <ul class="d-flex gap-2 m-0 p-0">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="main_menu">
+        <div class="container d-flex justify-between p-2 align-center">
+            <div class="brand_logo d-flex align-center">
+                <img src="./assets/title_logo.png" alt="" width="65">
+                <h1 class="ml-5 fw-4 fs-3">MultiCoin</h1>
+            </div>
+            <div class="menu_items">
+                <ul class="d-flex align-center gap-5 m-0 p-0">
+                    <li>
+                        <a class="menu_item blue_hover d-flex align-center gap-1 text-primary" href="#">
+                            <i class="fa-solid fa-circle fs-1 "></i>
+                            Home
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu_item blue_hover" href="#">
+                            Pages
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="menu_item blue_hover" href="#">
+                            Post
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu_item blue_hover" href="#">
+                            Blockchain
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu_item blue_hover" href="#">
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="canvas_part d-flex align-center gap-1">
+                <a href="#" class="btn bg-info border-dark text-light btn-sm">Subscribe!</a>
+                <div class="relative" x-data="{show:false}">
+                    <i class="bi bi-search fs-3 mx-4 pointer blue_hover" @click="show=!show" ></i>
+                    <div class="absolute search_bar  justify-center align-center" @click.outside="show=false" x-show="show" x-transition>
+                        <form action="" class="d-flex gap-1">
+                            <input type="text" class="border-success" placeholder="Search...">
+                            <button class="btn btn-sm bg-success border-dark text-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="canvas_menu blue_hover pointer d-flex flex-column align-end" @menu.window="appear=$event.detail.show"  x-data="{appear:false}" @click="appear=!appear;$dispatch('canvas',{appear})" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-<nav id="top_nav" class="d-block d-lg-none">
-    <div class="container px-1 pb-1 d-flex justify-between align-center">
-        <div class="left_side">
-            <ul class="d-flex gap-2 m-0 p-0">
-                <li class="p-3 relative "><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">About</a></li>
-                <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Forum</a></li>
-                <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Buy now!</a></li>
-                <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Login/Join</a></li>
+
+
+
+
+
+
+
+
+
+
+
+<div x-data="{show:null}" @canvas.window="show=$event.detail.appear">
+    <div   x-show="show" x-transition.opacity.delay.100ms  class="overlay" @click="show=false;$dispatch('menu',{show})" ></div>
+    <div  class="p-4 d-flex flex-column"  :style="show && {transform:'translateX(0)'}"  id="canvas" >
+        <div class="w-100 d-flex justify-end px-3 py-1">
+            <i @click="show=false;$dispatch('menu',{show})" class="bi bi-x-lg fs-3 pointer blue_hover"></i>
+        </div>
+        <div class="d-flex align-center">
+            <img src="./assets/title_logo.png" alt="" width="40">
+            <h1 class="ml-5 fw-4 fs-3">MultiCoin</h1>
+        </div>
+        <div>
+            <p class="text-muted fs-09">
+                The next-generation blog, news, and magazine theme for you to start your experience in Blockchain world!
+            </p>
+        </div>
+        <div class="mt-4">
+            <ul class="d-flex flex-column m-0 p-0">
+                <li class="mb-3 p-2 blue_hover pointer"><a  href="#">Home</a></li>
+                <li class="mb-3 p-2 blue_hover pointer"><a  href="#">About</a></li>
+                <li class="mb-3 p-2 blue_hover pointer"><a  href="#">Our Journal</a></li>
+                <li class="mb-3 p-2 blue_hover pointer"><a  href="#">Contact Us</a></li>
             </ul>
         </div>
-        <div class="d-flex gap-4 align-center right_side" x-data="{isRight:$persist(false)}" >
-            <div class="dark_switcher relative" @click="isRight=!isRight">
-                <i  @click.stop="isRight=!isRight"  :style="isRight && {left:'29px',animation:'rotate 130ms linear 80ms'}" class="fa-solid fa-sun" :class="isRight && 'changeToMoon'"></i>
+        <div class="mt-2 bg-primary-op2 p-2 d-f flex-column w-100 premium ">
+            <h5 class="text-muted text-center">MultiCoin</h5>
+            <h1 class="text-center fw-4 fs-3">Save on Premium Membership!</h1>
+            <p class="text-center fs-09 text-muted">
+                Get the insights report trusted by experts around the globe. Become a Member Today!
+            </p>
+            <div class="d-flex justify-center my-6 w-100">
+                <a href="#" class="btn bg-warning border-dark w-60 ">View pricing plans</a>
             </div>
-            <ul class="d-flex gap-2 m-0 p-0">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
-            </ul>
+        </div>
+        <div class="my-3">
+            <h4 class="text-muted fw-6">Germany, Berlin(HQ)</h4>
+            <h5 class="text-muted fw-4">Lorem ipsum dolor sit amet, consectetur.</h5>
+            <h5 class="text-muted fw-4">Call: 123-456-7890</h5>
+            <h5 class="text-muted fw-4">hoomanmousavi77@gmail.com</h5>
         </div>
     </div>
-</nav>
+</div>
+
 
 
 
