@@ -9,6 +9,13 @@ import '../images/crypto_news_logo.png';
 import '../images/security_coin.png';
 import '../images/industry.png';
 import '../images/technology.png'
+import '../images/btc.png';
+import '../images/eth.png';
+import '../images/crd.png';
+import '../images/meta.png';
+import '../images/nft.png';
+import '../images/rip.png';
+import '../images/sol.png';
 import '../scss/main.scss';
 import '../scss/responsive.scss';
 /////////////////////////////////////////////////////////////////////////////////////////

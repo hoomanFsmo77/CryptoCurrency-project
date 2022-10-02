@@ -101,7 +101,61 @@
                             Pages
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition x-cloak></div>
+                        <div class="sub_menu absolute py-3" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                            <ul class="m-0 p-0">
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">About</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Contact</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Realtime Market Price</a></li>
+                                <li class="px-3 py-2   rotate relative double_sub_menu" x-data="menu"  x-bind="menuTrigger">
+                                    <a class="fs-09 blue_hover d-flex justify-between align-center w-100" href="#">
+                                        <span>
+                                            Shop
+                                            <span class="badge bg-info">New</span>
+                                        </span>
+                                        <i class="bi bi-plus"></i>
+                                    </a>
+
+                                    <ul class="absolute p-0 m-0" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Shop Grid<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Shop Detail<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Checkout<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Card<span class="badge bg-info">New</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Sign in</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Sign up</a></li>
+                                <li class="divider"></li>
+                                <li class="px-3 py-2   double_sub_menu relative" x-data="menu"  x-bind="menuTrigger">
+                                    <a class="fs-09 rotate blue_hover d-flex justify-between align-center" href="#">
+                                        Dropdown levels
+                                        <i class="bi bi-plus"></i>
+                                    </a>
+                                    <ul class="absolute p-0 m-0" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                                        <li class="px-3 py-2 double_sub_menu relative" x-data="menu"  x-bind="menuTrigger">
+                                            <a class="fs-09 rotate d-flex justify-between align-center w-100 blue_hover" href="#">
+                                                Dropdown item 1
+                                                <i class="bi bi-plus"></i>
+                                            </a>
+                                            <ul class="absolute p-0 m-0" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Dropdown item 1</a></li>
+                                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Dropdown item 2<span class="badge bg-info">New</span></a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Dropdown item 2<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Dropdown item 3</a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Dropdown item 4<span class="badge bg-info">New</span></a></li>
+                                    </ul>
+
+
+                                </li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#"><i class="bi bi-life-preserver mr-2 fs-2 text-warning"></i>Support </a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#"><i class="bi bi-card-text mr-2 fs-2 text-info"></i>Documentation</a></li>
+                                <li class="divider"></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#"><i class="bi bi-toggle-off mr-2 fs-2 text-primary"></i>Rtl Demo</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#"><i class="bi bi-cloud-download-fill mr-2 fs-2 text-success"></i>Buy MultiCoin!</a></li>
+                            </ul>
+                        </div>
 
                     </li>
                     <li class="relative h-100 pointer" x-data="menu"  x-bind="menuTrigger">
@@ -109,7 +163,53 @@
                             Post
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition x-cloak></div>
+                        <div class="sub_menu absolute py-3" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                            <ul class="m-0 p-0">
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="./assets/btc.png" alt="">Bitcoin lorem lorem</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="./assets/eth.png" alt="">Ethereum lorem ipsum</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="./assets/crd.png" alt="">Cardano lorem</a></li>
+                                <li class="divider"></li>
+                                <li class="px-3 py-2   rotate relative double_sub_menu" x-data="menu"  x-bind="menuTrigger">
+                                    <a class="fs-09 blue_hover d-flex justify-between align-center w-100" href="#">
+                                        <span class="d-flex align-center gap-1 fs-09 justify-start">
+                                            <img width="20" src="./assets/meta.png" alt="">
+                                            Meta-verse
+                                            <span class="badge bg-info">New</span>
+                                        </span>
+                                        <i class="bi bi-plus"></i>
+                                    </a>
+
+                                    <ul class="absolute p-0 m-0" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Post 4-1<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Post 4-2<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Post 4-3<span class="badge bg-info">New</span></a></li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Post 4-4<span class="badge bg-info">New</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="./assets/nft.png" alt="">NFT</a></li>
+                                <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="./assets/rip.png" alt="">Ripple Court</a></li>
+                                <li class="divider"></li>
+                                <li class="px-3 py-2   double_sub_menu relative" x-data="menu"  x-bind="menuTrigger">
+                                    <a class="fs-09 rotate blue_hover d-flex justify-between align-center" href="#">
+                                        <span class="align-center d-flex  gap-2">
+                                            <img width="20" src="./assets/sol.png" alt="">
+                                            Solana
+                                        </span>
+
+                                        <i class="bi bi-plus"></i>
+                                    </a>
+                                    <ul class="absolute p-0 m-0" x-bind="showSubMenu" x-transition.opacity.scale.origin.top x-cloak>
+                                        <li class="px-3 py-2 double_sub_menu relative" x-data="menu"  x-bind="menuTrigger">
+                                            <a class="fs-09  d-flex justify-between align-center w-100 blue_hover" href="#">
+                                                Post 7-1
+                                            </a>
+                                        </li>
+                                        <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Post 7-2<span class="badge bg-info">New</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
 
                     </li>
                     <li class="relative h-100 pointer" x-data="menu"  x-bind="menuTrigger">

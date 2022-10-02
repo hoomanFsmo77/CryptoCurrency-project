@@ -165,13 +165,25 @@ i.changeToMoon::before{
       background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/news-bg.jpg") no-repeat center center/cover;
     }
     li:nth-child(2) .sub_menu{
-      left: -16rem
+      left: -3rem;
+      width: 16vw!important;
     }
     li:nth-child(3) .sub_menu{
-      left: -23.3rem
+      left: -5rem;
+      width: 16vw!important;
     }
     li:nth-child(4) .sub_menu{
       left: -28.7rem;
+    }
+    li.double_sub_menu ul{
+      width: 16vw;
+      background: $light;
+      @include box-shadow(0 0 40px rgba(0,0,0,0.1));
+      @include border-radius(6px);
+      z-index: 99999;
+      height: auto;
+      right: -13.7rem;
+      top: -3rem;
     }
   }
 }

@@ -116,7 +116,7 @@ button.btn-sm,a.btn-sm{
   background: $success;
 }
 .text-success{
-  color: $success;
+  color: $success!important;
 }
 .text-muted{
   color: $secondary!important;
@@ -125,7 +125,7 @@ button.btn-sm,a.btn-sm{
   background: $warning;
 }
 .text-warning{
-  color: $warning;
+  color: $warning!important;
 }
 ///////////////////////////
 .container{
@@ -610,4 +610,31 @@ input.border-success{
 //////////
 .border-muted{
   border-bottom: 2px solid #ccc;
+}
+///////// divider
+.divider{
+  width: 100%;
+  height: 2px;
+  background: $secondary;
+  margin: 0.3rem 0;
+  opacity: 0.5;
+}
+////////////////// rotate
+.rotate {
+  i{
+    @include transition(all 150ms linear);
+  }
+  &:hover i{
+    @include transform(rotate(45deg));
+  }
+}
+////////////// badge
+.badge{
+  display: inline-block;
+  padding: 5px;
+  @include border-radius(5px);
+  color: $light!important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: auto 0.5rem;
 }
