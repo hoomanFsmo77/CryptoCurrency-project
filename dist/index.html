@@ -10,7 +10,7 @@
     <meta name="keyword" content="HTML,CSS,Js developer">
     <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<script defer src="bundle3b5723f07997878f9708.js"></script><link href="css/bundle2e9446260b63a167db04.css" rel="stylesheet"></head>
+<script defer src="bundle5990f11b6bf94ad6d752.js"></script><link href="css/bundle72963e0786c1b6439b4c.css" rel="stylesheet"></head>
 <body>
 <header>
     <nav id="top_nav" class="d-block d-lg-none">
@@ -48,10 +48,53 @@
                     <li class="relative h-100  pointer" x-data="menu"  x-bind="menuTrigger">
                         <a class="menu_item blue_hover d-flex align-center h-100 gap-1 text-primary gap-1" href="#">
                             <i class="fa-solid fa-circle fs-1 "></i>
-                            Home
+                            News
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition.delay.80ms x-cloak></div>
+                        <div class="sub_menu absolute p-4  grid-4"  x-bind="showSubMenu" x-transition.opacity.scale.origin.top  x-cloak>
+                            <ul class="d-flex flex-column align-center m-0 p-0">
+                                <li class="text-center mb-2 text-muted">
+                                    <img src="./assets/crypto_news_logo.png" alt="" width="40">
+                                    <h3 class="text-center fw-4 border-muted yellow_hover">Crypto News</h3>
+                                </li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Bitcoin News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Bitcoin Price Analysis</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Ethereum News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Cardano News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Ripple News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Stablecoin News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">CBDC News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Defi News</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">NFT News</a></li>
+                            </ul>
+                            <ul class="d-flex flex-column align-center">
+                                <li class="text-center mb-2 text-muted">
+                                    <img src="./assets/security_coin.png" alt="" width="40">
+                                    <h3 class="text-center fw-4 border-muted yellow_hover">Regulatory News</h3>
+                                </li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Regulation</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Legal</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Cybercrime</a></li>
+                            </ul>
+                            <ul class="d-flex flex-column align-center">
+                                <li class="text-center mb-2 text-muted">
+                                    <img src="./assets/industry.png" alt="" width="40">
+                                    <h3 class="text-center fw-4 border-muted yellow_hover">Industry News</h3>
+                                </li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Exchanges</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Mining</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Data Service</a></li>
+                            </ul>
+                            <ul class="d-flex flex-column align-center">
+                                <li class="text-center mb-2 text-muted">
+                                    <img src="./assets/technology.png" alt="" width="40">
+                                    <h4 class="text-center fw-4 border-muted yellow_hover">Technology News</h4>
+                                </li>
+                                <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Enterprise</a></li>
+                                <li class="mb-2  fs-09 fw-4 py-1 text-center"><a class="text-light yellow_hover" href="#">Blockchain Application</a></li>
+                            </ul>
+
+                        </div>
                     </li>
                     <li class="relative h-100 pointer"  x-data="menu"  x-bind="menuTrigger">
                         <a class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">

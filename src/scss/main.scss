@@ -150,8 +150,9 @@ i.changeToMoon::before{
     @include border-radius(9px);
   }
   .sub_menu{
-    width: 82vw;
-    height: 200px;
+    display: grid;
+    width: 60vw;
+    height: auto;
     z-index: 99999;
     top: 82px;
     background: $light;
@@ -160,16 +161,17 @@ i.changeToMoon::before{
   }
   .menu_items ul {
     li:first-child .sub_menu{
-      left: -19rem
+      left: -9rem;
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/news-bg.jpg") no-repeat center center/cover;
     }
     li:nth-child(2) .sub_menu{
-      left: -26rem
+      left: -16rem
     }
     li:nth-child(3) .sub_menu{
-      left: -32.3rem
+      left: -23.3rem
     }
     li:nth-child(4) .sub_menu{
-      left: -37.7rem;
+      left: -28.7rem;
     }
   }
 }
