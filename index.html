@@ -51,6 +51,9 @@
                             Home
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
+                        <div >
+
+                        </div>
                     </li>
                     <li>
                         <a class="menu_item blue_hover" href="#">
@@ -88,7 +91,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="canvas_menu blue_hover pointer d-flex flex-column align-end" @menu.window="appear=$event.detail.show"  x-data="{appear:false}" @click="appear=!appear;$dispatch('canvas',{appear})" >
+                <div class="canvas_menu blue_hover pointer d-flex flex-column align-end" x-data="canvasMenu" x-bind="trigger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -110,11 +113,11 @@
 
 
 
-<div x-data="{show:null}" @canvas.window="show=$event.detail.appear">
-    <div   x-show="show" x-transition.opacity.delay.100ms  class="overlay" @click="show=false;$dispatch('menu',{show})" ></div>
-    <div  class="p-4 d-flex flex-column"  :style="show && {transform:'translateX(0)'}"  id="canvas" >
+<div x-data="canvas" x-bind="trigger">
+    <div   x-bind="overlayTrigger"  x-transition.opacity.delay.100ms  class="overlay" ></div>
+    <div  class="p-4 d-flex flex-column"  x-bind="showCanvas"  id="canvas" >
         <div class="w-100 d-flex justify-end px-3 py-1">
-            <i @click="show=false;$dispatch('menu',{show})" class="bi bi-x-lg fs-3 pointer blue_hover"></i>
+            <i x-bind="closeCanvas" class="bi bi-x-lg fs-3 pointer blue_hover"></i>
         </div>
         <div class="d-flex align-center">
             <img src="./assets/title_logo.png" alt="" width="40">
