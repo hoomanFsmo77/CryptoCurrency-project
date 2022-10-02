@@ -38,43 +38,47 @@
         </div>
     </nav>
     <nav id="main_menu">
-        <div class="container d-flex justify-between p-2 align-center">
-            <div class="brand_logo d-flex align-center">
-                <img src="./assets/title_logo.png" alt="" width="65">
+        <div class="container d-flex justify-between p-2 ">
+            <div class="brand_logo d-flex align-center py-4">
+                <img src="./assets/title_logo.png" alt="" width="50">
                 <h1 class="ml-5 fw-4 fs-3">MultiCoin</h1>
             </div>
             <div class="menu_items">
-                <ul class="d-flex align-center gap-5 m-0 p-0">
-                    <li>
-                        <a class="menu_item blue_hover d-flex align-center gap-1 text-primary" href="#">
+                <ul class="d-flex align-center gap-5 m-0 p-0 h-100">
+                    <li class="relative h-100  pointer" x-data="menu"  x-bind="menuTrigger">
+                        <a class="menu_item blue_hover d-flex align-center h-100 gap-1 text-primary gap-1" href="#">
                             <i class="fa-solid fa-circle fs-1 "></i>
                             Home
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div >
-
-                        </div>
+                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition.delay.80ms x-cloak></div>
                     </li>
-                    <li>
-                        <a class="menu_item blue_hover" href="#">
+                    <li class="relative h-100 pointer"  x-data="menu"  x-bind="menuTrigger">
+                        <a class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">
                             Pages
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
+                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition x-cloak></div>
+
                     </li>
-                    <li>
-                        <a  class="menu_item blue_hover" href="#">
+                    <li class="relative h-100 pointer" x-data="menu"  x-bind="menuTrigger">
+                        <a  class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">
                             Post
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
+                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition x-cloak></div>
+
                     </li>
-                    <li>
-                        <a class="menu_item blue_hover" href="#">
+                    <li class="relative h-100 pointer" x-data="menu"  x-bind="menuTrigger">
+                        <a class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">
                             Blockchain
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
+                        <div class="sub_menu absolute " x-bind="showSubMenu" x-transition x-cloak></div>
+
                     </li>
-                    <li>
-                        <a class="menu_item blue_hover" href="#">
+                    <li class="relative h-100">
+                        <a class="menu_item blue_hover h-100 d-flex align-center " href="#">
                             Dashboard
                         </a>
                     </li>
@@ -84,7 +88,7 @@
                 <a href="#" class="btn bg-info border-dark text-light btn-sm">Subscribe!</a>
                 <div class="relative" x-data="{show:false}">
                     <i class="bi bi-search fs-3 mx-4 pointer blue_hover" @click="show=!show" ></i>
-                    <div class="absolute search_bar  justify-center align-center" @click.outside="show=false" x-show="show" x-transition>
+                    <div class="absolute search_bar  justify-center align-center" @click.outside="show=false" x-show="show" x-cloak x-transition>
                         <form action="" class="d-flex gap-1">
                             <input type="text" class="border-success" placeholder="Search...">
                             <button class="btn btn-sm bg-success border-dark text-light" type="submit">Search</button>
