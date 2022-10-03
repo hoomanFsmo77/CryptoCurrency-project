@@ -2,10 +2,20 @@ export  default ()=>({
     open:false,
     menuTrigger:{
         ['@mouseenter'](){
-            this.open=true
+            if(window.innerWidth > 1200){
+                this.open=true
+            }
         },
         ['@mouseleave'](){
-            this.open=false
+            if(window.innerWidth > 1200){
+                this.open=false
+            }
+        },
+        ['@click.stop'](){
+            if(window.innerWidth < 1200){
+                this.open=!this.open
+            }
+
         }
     },
     showSubMenu:{

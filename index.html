@@ -36,18 +36,20 @@
             </div>
         </div>
     </nav>
-    <nav id="main_menu">
+    <nav id="main_menu" class="relative" x-data="{collapse:false}" :style="collapse && {borderBottom:'1px solid #ccc'}">
         <div class="container d-flex justify-between p-2 ">
             <div class="brand_logo d-flex align-center py-4">
                 <img src="./assets/title_logo.png" alt="" width="50">
                 <h1 class="ml-5 fw-4 fs-3">MultiCoin</h1>
             </div>
-            <div class="menu_items">
-                <ul class="d-flex align-center gap-5 m-0 p-0 h-100">
-                    <li class="relative h-100  pointer" x-data="menu"  x-bind="menuTrigger">
-                        <a class="menu_item blue_hover d-flex align-center h-100 gap-1 text-primary gap-1" href="#">
-                            <i class="fa-solid fa-circle fs-1 "></i>
-                            News
+            <div class="menu_items" x-show="window.innerWidth > 1200 ? true : collapse" x-transition x-cloak>
+                <ul class="d-flex flex-xlg-column align-center gap-5 m-0 p-0  " >
+                    <li class="relative h-100 pointer main_menu_item" x-data="menu"  x-bind="menuTrigger">
+                        <a class="menu_item blue_hover d-flex justify-xlg-between align-center h-100 gap-1 text-primary gap-1" href="#">
+                            <span class="d-flex align-center">
+                               <i class="fa-solid fa-circle fs-1 mr-2"></i>
+                                News
+                            </span>
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
                         <div class="sub_menu absolute p-4  grid-4"  x-bind="showSubMenu" x-transition.opacity.scale.origin.top  x-cloak>
@@ -95,8 +97,8 @@
 
                         </div>
                     </li>
-                    <li class="relative h-100 pointer"  x-data="menu"  x-bind="menuTrigger">
-                        <a class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">
+                    <li class="relative h-100 pointer main_menu_item"  x-data="menu"  x-bind="menuTrigger">
+                        <a class="menu_item blue_hover h-100 d-flex align-center gap-1 justify-xlg-between" href="#">
                             Pages
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
@@ -157,8 +159,8 @@
                         </div>
 
                     </li>
-                    <li class="relative h-100 pointer" x-data="menu"  x-bind="menuTrigger">
-                        <a  class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">
+                    <li class="relative h-100 pointer main_menu_item" x-data="menu"  x-bind="menuTrigger">
+                        <a  class="menu_item blue_hover h-100 d-flex align-center gap-1 justify-xlg-between" href="#">
                             Post
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
@@ -211,8 +213,8 @@
                         </div>
 
                     </li>
-                    <li class="relative h-100 pointer" x-data="menu"  x-bind="menuTrigger">
-                        <a class="menu_item blue_hover h-100 d-flex align-center gap-1" href="#">
+                    <li class="relative h-100 pointer main_menu_item" x-data="menu"  x-bind="menuTrigger">
+                        <a class="menu_item blue_hover h-100 d-flex align-center gap-1 justify-xlg-between" href="#">
                             Blockchain
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
@@ -267,18 +269,18 @@
 
 
                                 </div>
-                                <div class="bg-primary-op2 radius-1 d-flex flex-column p-2">
+                                <div class="bg-primary-op2 radius-1 d-flex flex-column p-2 premium">
                                     <h5 class="text-muted text-center">MultiCoin</h5>
                                     <h1 class="text-center fw-4 fs-3">Premium Membership!</h1>
                                     <p class="text-center fs-09 text-muted">
                                         Become a Member Today!
                                     </p>
                                     <div class="d-flex justify-center my-6 w-100">
-                                        <a href="#" class="btn bg-warning border-dark w-60 ">View pricing plans</a>
+                                        <a href="#" class="btn bg-warning border-dark w-80 btn-sm">View pricing plans</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex align-center my-2">
+                            <div class="d-flex align-center my-2 tag_container">
                                 <h4 class="text-muted">Trending Tags:</h4>
                                 <a href="#" class="mx-2"><span class="tag_blue">Bitcoin</span></a>
                                 <a href="#" class="mx-2"><span class="tag_success">Cardano</span></a>
@@ -292,7 +294,7 @@
                             
                         </div>
                     </li>
-                    <li class="relative h-100">
+                    <li class="relative h-100 main_menu_item">
                         <a class="menu_item blue_hover h-100 d-flex align-center " href="#">
                             Dashboard
                         </a>
@@ -300,7 +302,16 @@
                 </ul>
             </div>
             <div class="canvas_part d-flex align-center gap-1">
-                <a href="#" class="btn bg-info border-dark text-light btn-sm">Subscribe!</a>
+                <div @click="collapse=!collapse" class="d-none d-xlg-flex gap-2 hamburger_menu ml-3 align-center">
+                    <h4 class="text-muted d-sm-none">Menu</h4>
+                    <div class="canvas_menu blue_hover pointer d-flex flex-column align-end" >
+                        <span class="w-100 bg-muted"></span>
+                        <span class="w-100 bg-muted"></span>
+                        <span class="w-100 bg-muted"></span>
+                        <span class="w-100 bg-muted"></span>
+                    </div>
+                </div>
+                <a href="#" class="btn bg-info border-dark text-light btn-sm d-md-none">Subscribe!</a>
                 <div class="relative" x-data="{show:false}">
                     <i class="bi bi-search fs-3 mx-4 pointer blue_hover" @click="show=!show" ></i>
                     <div class="absolute search_bar  justify-center align-center" @click.outside="show=false" x-show="show" x-cloak x-transition>

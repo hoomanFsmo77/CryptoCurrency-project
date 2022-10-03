@@ -83,7 +83,7 @@ button.border-dark,a.border-dark{
 
 button.btn-sm,a.btn-sm{
   font-size: 0.9rem!important;
-  width: 104px!important;
+  width: 104px;
   height: 34px!important;
 }
 ////////////////////// colors
@@ -120,6 +120,9 @@ button.btn-sm,a.btn-sm{
 }
 .text-muted{
   color: $secondary!important;
+}
+.bg-muted{
+  background: $secondary!important;
 }
 .bg-warning{
   background: $warning;
@@ -345,6 +348,13 @@ $wd:0.1;$cf:10;
   .d-sm-inline-block{
     display: inline-block!important;
   }
+  .d-sm-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
   .flex-sm-row{
     flex-direction:row !important;
     -webkit-flex-direction: row!important;
@@ -402,6 +412,13 @@ $wd:0.1;$cf:10;
   }
   .d-md-inline-block{
     display: inline-block!important;
+  }
+  .d-md-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
   }
   .flex-md-row{
     flex-direction:row !important;
@@ -462,6 +479,13 @@ $wd:0.1;$cf:10;
   .d-lg-inline-block{
     display: inline-block!important;
   }
+  .d-lg-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
   .flex-lg-row{
     flex-direction:row !important;
     -webkit-flex-direction: row!important;
@@ -520,14 +544,21 @@ $wd:0.1;$cf:10;
   .d-xlg-inline-block{
     display: inline-block!important;
   }
+  .d-xlg-flex{
+    display: flex!important;
+    display: -moz-flex!important;
+    display: -webkit-flex!important;
+    display: -o-flex!important;
+    display: -ms-flex!important;
+  }
 
   .flex-xlg-row{
     flex-direction:row !important;
     -webkit-flex-direction: row!important;
   }
   .flex-xlg-column{
-    flex-direction:row !important;
-    -webkit-flex-direction: row!important;
+    flex-direction:column !important;
+    -webkit-flex-direction: column!important;
   }
   .flex-xlg-reverse{
     flex-direction:row-reverse !important;

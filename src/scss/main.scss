@@ -165,21 +165,22 @@ i.changeToMoon::before{
     @include border-radius(6px);
   }
   .menu_items ul {
+    height: 100%;
     li:first-child .sub_menu{
       left: -9rem;
       background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/news-bg.jpg") no-repeat center center/cover;
     }
     li:nth-child(2) .sub_menu{
       left: -3rem;
-      width: 16vw!important;
+      width: 16vw;
     }
     li:nth-child(3) .sub_menu{
       left: -5rem;
-      width: 16vw!important;
+      width: 18vw;
     }
     li:nth-child(4) .sub_menu{
-      left: -37.45rem;
-      width: 83vw!important;
+      left: -34.45rem;
+      width: 1023px ;
     }
     li.double_sub_menu ul{
       width: 16vw;
@@ -188,8 +189,11 @@ i.changeToMoon::before{
       @include border-radius(6px);
       z-index: 99999;
       height: auto;
-      right: -13.7rem;
+      right: -12.7rem;
       top: -3rem;
+    }
+    @media (max-width: 1250px) {
+      right: -11.7rem!important;
     }
   }
 }

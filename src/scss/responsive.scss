@@ -1,20 +1,93 @@
 @import "Mixins";
 @import "Variables";
-@include query(sm){ ////max-width: 500px
-
-}
-
-@include query(md){  ////max-width: 768px
-
-}
-
-
-
-@include query(lg){ ////max-width: 960px
-
-}
 
 
 @include query(xlg){ ////max-width: 1200px
+  .menu_items{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 99px;
+    background: white;
+    @include box-shadow(0 29px 40px rgba(0,0,0,0.1));
+    .main_menu_item{
+      width: 100% !important;
+      padding: 1.2rem 1.3rem 1.2rem 1.7rem !important;
+      border-bottom: 1px solid #ccc;
+    }
+    ul:first-child{
+      @include transition(all 160ms linear);
+      height: 0;
+      gap:0!important;
+      ul,.sub_menu{
+        margin-top: 0.6rem!important;
+        background:$dark_op2!important;
+        position: static!important;
+        box-shadow: none!important;
+        width: 100% !important;
+      }
+      li:first-child .sub_menu{
+        ul{
+          padding: 0!important;
+        }
+        li a{
+          color: $dark!important;
+        }
+      }
+      li:nth-child(4) .sub_menu div:first-child{
+        grid-template-columns: repeat(2,1fr) !important;
+        div{
+          text-align: center!important;
+          align-items: center!important;
+        }
+        .premium{
+          width: 75%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+
+@include query(lg){ ////max-width: 960px
+  .menu_items ul:first-child{
+    li:first-child .sub_menu{
+      grid-template-columns: repeat(2,1fr) !important;
+    }
+    .tag_container{
+      flex-wrap: wrap;
+      a{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .premium{
+      width: 100% !important;
+      margin: auto!important;
+    }
+  }
+}
+
+@include query(md){  ////max-width: 768px
+  .menu_items  ul:first-child{
+    li:nth-child(4) .sub_menu div:first-child{
+      grid-template-columns: 1fr !important;
+    }
+  }
 
 }
+
+@include query(sm){ ////max-width: 500px
+  .menu_items ul:first-child{
+    li:first-child .sub_menu{
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+
+
+
+
+
