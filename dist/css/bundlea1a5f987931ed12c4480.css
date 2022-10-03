@@ -2618,6 +2618,96 @@ input.border-success:focus {
   margin: auto 0.5rem;
 }
 
+.radius-1 {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.radius-2 {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.radius-3 {
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.radius-4 {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+a.btn-link {
+  background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-size: 0px 6%;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  -webkit-transition: all 300ms ease-in;
+}
+a.btn-link:hover {
+  background-size: 100% 10%;
+}
+
+.tag_warning, .tag_info, .tag_success, .tag_blue {
+  display: inline-block;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  transition: all 140ms linear;
+  -moz-transition: all 140ms linear;
+  -ms-transition: all 140ms linear;
+  -o-transition: all 140ms linear;
+  -webkit-transition: all 140ms linear;
+}
+
+.tag_blue {
+  background: rgba(41, 171, 225, 0.2);
+  color: rgb(41, 171, 225);
+}
+.tag_blue:hover {
+  background: rgb(41, 171, 225);
+  color: #fff;
+}
+
+.tag_success {
+  background: rgba(87, 204, 153, 0.4);
+  color: #57cc99;
+}
+.tag_success:hover {
+  background: #57cc99;
+  color: #fff;
+}
+
+.tag_info {
+  background: rgba(242, 112, 89, 0.2);
+  color: #f27059;
+}
+.tag_info:hover {
+  background: #f27059;
+  color: #fff;
+}
+
+.tag_warning {
+  background: rgba(242, 166, 90, 0.2);
+  color: #f2a65a;
+}
+.tag_warning:hover {
+  background: #f2a65a;
+  color: #fff;
+}
+
 /*!
  * Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

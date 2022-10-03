@@ -638,3 +638,74 @@ input.border-success{
   font-weight: 700;
   margin: auto 0.5rem;
 }
+///////// radius
+.radius-1{
+  @include border-radius(5px);
+}
+.radius-2{
+  @include border-radius(10px);
+}
+.radius-3{
+  @include border-radius(15px);
+}
+.radius-4{
+  @include border-radius(20px);
+}
+//////////////////////
+a.btn-link{
+  background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-size: 0px 6%;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  @include transition(all 300ms ease-in);
+  &:hover{
+    background-size: 100% 10%;
+  }
+}
+///////////////// tags
+%tag{
+  display: inline-block;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  @include border-radius(5px);
+  @include transition(all 140ms linear);
+
+}
+.tag_blue{
+  @extend %tag;
+  background: $primary_op2;
+  color: $primary;
+  &:hover{
+    background: $primary;
+    color: $light;
+  }
+}
+.tag_success{
+  @extend %tag;
+  background: $success_op2;
+  color: $success;
+  &:hover{
+    background:  $success;
+    color: $light;
+
+  }
+}
+.tag_info{
+  @extend %tag;
+  background: $info_op2;
+  color: $info;
+  &:hover{
+    background:  $info;
+    color: $light;
+  }
+}
+.tag_warning{
+  @extend %tag;
+  background: $warning_op2;
+  color: $warning;
+  &:hover{
+    background:  $warning;
+    color: $light;
+  }
+}
