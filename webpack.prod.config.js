@@ -10,7 +10,7 @@ module.exports={
         path: path.resolve(__dirname,'./dist'),
         assetModuleFilename: 'assets/[name][ext]'
     },
-    mode: "none",
+    mode: "production",
     module: {
         rules: [
             {
@@ -42,26 +42,14 @@ module.exports={
             }
         ]
     },
-    optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin()],
-    },
     plugins: [new MiniCssExtractPlugin({
         filename:'css/bundle[contenthash].css'
     }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: "index.html"
-        })
-    ],
-    devServer: {
-        static: {
-            directory: path.join(__dirname, 'public'),
-        },
-        compress: true,
-        port: 9000,
-        devMiddleware:{
-            writeToDisk: true
-        }
-    }
+            template: "index.html",
+            publicPath:"./dist/"
+        }),
+        new TerserPlugin()
+    ]
 }

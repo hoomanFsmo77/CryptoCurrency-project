@@ -220,7 +220,7 @@ $fs:0.5;$of:1;
     font-size: $fs+rem!important;
   }
   $fs:$fs+0.5;
-  $of:$of +1
+  $of:$of + 1
 }
 .fs-09{
   font-size: 0.9rem!important;
@@ -253,7 +253,7 @@ $wd:0.1;$cf:10;
     height: percentage($wd)!important;
   }
   $wd:$wd+0.1;
-  $cf:$cf +10
+  $cf:$cf + 10
 }
 //////////////////////// position
 .relative{
