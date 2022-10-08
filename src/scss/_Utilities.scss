@@ -740,3 +740,22 @@ a.btn-link{
     color: $light;
   }
 }
+/////////////////// slider arrow
+.arrow{
+  padding: 8px 9px;
+  background: #fff;
+  @include border-radius(50%);
+  @include flex(f,row,center,center);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+///////////////// bg-blue-hover
+.bg-blue-hover{
+  @include transition(all 150ms linear);
+  &:hover{
+    background: $primary;
+    *{
+      color: $light;
+    }
+  }
+}
