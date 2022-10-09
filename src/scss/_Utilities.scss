@@ -759,6 +759,8 @@ a.btn-link.btn-stretch{
   @include flex(f,row,center,center);
   font-size: 0.8rem;
   cursor: pointer;
+  position: relative;
+  z-index: 9999;
 }
 ///////////////// bg-blue-hover
 .bg-blue-hover{

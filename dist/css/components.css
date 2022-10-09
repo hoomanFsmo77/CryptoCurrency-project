@@ -2772,6 +2772,8 @@ a.btn-link.btn-stretch:after {
   -webkit-align-items: center;
   font-size: 0.8rem;
   cursor: pointer;
+  position: relative;
+  z-index: 9999;
 }
 
 .bg-blue-hover {
