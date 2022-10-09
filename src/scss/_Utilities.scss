@@ -132,7 +132,7 @@ button.btn-sm,a.btn-sm{
 }
 ///////////////////////////
 .container{
-  width: calc(100% - 15rem);
+  width: calc(100% - 13rem);
   margin: auto;
 }
 @include query(xlg){
@@ -690,7 +690,18 @@ a.btn-link{
   background-position: left 100%;
   @include transition(all 300ms ease-in);
   &:hover{
-    background-size: 100% 10%;
+    background-size: 100% 6%;
+  }
+}
+a.btn-link.btn-stretch{
+  &:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
   }
 }
 ///////////////// tags
@@ -757,5 +768,57 @@ a.btn-link{
     *{
       color: $light;
     }
+  }
+}
+
+///////// overflow
+.o-hidden{
+  overflow: hidden!important;
+}
+/////////////////// category
+%cat{
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 9px;
+  }
+}
+.cat-blue{
+  @extend %tag;
+  @extend %cat;
+  background: $primary;
+  color: $light;
+  &:before{
+    background: $light;
+  }
+}
+.cat-blue{
+  @extend %tag;
+  @extend %cat;
+  background: $primary;
+  color: $light;
+  &:before{
+    background: $light;
+  }
+}
+.cat-info{
+  @extend %tag;
+  @extend %cat;
+  background: $info;
+  color: $light;
+  &:before{
+    background: $light;
+  }
+}
+.cat-dark{
+  @extend %tag;
+  @extend %cat;
+  background: $dark;
+  color: $light;
+  &:before{
+    background: $light;
   }
 }

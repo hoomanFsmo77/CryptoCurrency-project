@@ -16,6 +16,7 @@ import '../images/meta.png';
 import '../images/nft.png';
 import '../images/rip.png';
 import '../images/sol.png';
+import '../images/man.svg';
 import '../scss/main.scss';
 import '../scss/responsive.scss';
 /////////////////////////////////////////////////////////////////////////////////////////
