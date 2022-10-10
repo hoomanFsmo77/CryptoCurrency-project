@@ -146,6 +146,7 @@ i.changeToMoon::before{
     }
   }
   .search_bar{
+    z-index: 99999;
     display: flex;
     width: 307px;
     height: 56px;
@@ -236,4 +237,11 @@ i.changeToMoon::before{
   .main_content{
     background: $primary_op2;
   }
+}
+////////////////////////////// main
+#main {
+  .container{
+    @include grid(g,0.75fr 0.25fr,auto,center,center);
+  }
+
 }

@@ -153,6 +153,7 @@ button.btn-sm,a.btn-sm{
 @include query(sm){
   .container{
     width: 100%;
+    padding: 10px;
   }
 }
 ///// margin
@@ -594,7 +595,7 @@ $wd:0.1;$cf:10;
   }
   @for $counter from 1 through 8{
     .grid-xlg-#{$counter}{
-      grid-template-columns: repeat($counter,1fr);
+      grid-template-columns: repeat($counter,1fr) !important;
     }
     $counter:$counter+1
   }
@@ -688,7 +689,7 @@ a.btn-link{
   background-size: 0px 6%;
   background-repeat: no-repeat;
   background-position: left 100%;
-  @include transition(all 300ms ease-in);
+  @include transition(all 500ms ease-in);
   &:hover{
     background-size: 100% 6%;
   }
@@ -822,5 +823,23 @@ a.btn-link.btn-stretch{
   color: $light;
   &:before{
     background: $light;
+  }
+}
+.cat-success{
+  @extend %tag;
+  @extend %cat;
+  background: $success;
+  color: $light;
+  &:before{
+    background: $light;
+  }
+}
+.cat-warning{
+  @extend %tag;
+  @extend %cat;
+  background: $warning;
+  color: $dark;
+  &:before{
+    background: $dark;
   }
 }

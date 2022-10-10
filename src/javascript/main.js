@@ -1,10 +1,11 @@
 import Alpine from "alpinejs";
+import $ from "jquery";
+import 'slick-carousel';
 import persist from '@alpinejs/persist';
 import canvas from './components/Canvas/Alpine.canvas.js';
 import canvasMenu from './components/Canvas/Alpine.canvas.menu.js'
 import menu from './components/Menu/Alpine.menu.js';
-import $ from 'jquery';
-import 'slick-carousel';
+import slider from './components/Carousel/Carousel';
 import '../images/title_logo_sm.png'
 import '../images/title_logo.png';
 import '../images/crypto_news_logo.png';
@@ -19,18 +20,15 @@ import '../images/nft.png';
 import '../images/rip.png';
 import '../images/sol.png';
 import '../images/man.svg';
+import '../images/man-1.svg';
+import '../images/man-2.svg';
+import '../images/man-3.svg';
+import '../images/girl.svg';
+import '../images/girl-1.svg';
 import '../scss/main.scss';
 import '../scss/responsive.scss';
 /////////////////////////////////////////////////////////////////////////////////////////
-$('.single-item').slick({
-    nextArrow: $('.prev_arrow'),
-    prevArrow:$('.next_arrow'),
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
+$('.single-item').slick(slider);
 window.Alpine=Alpine
 Alpine.plugin(persist)
 Alpine.data('canvasMenu',canvasMenu)

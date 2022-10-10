@@ -78,3 +78,33 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
     }
   }
 }
+//////////////////// highlight card
+.highlight_card{
+  .card_title{
+    word-break: break-all;
+    line-height: 1.5;
+    font-size: 1.35rem;
+  }
+  p{
+    line-height: 1.5!important;
+  }
+  .video_part{
+    display: none;
+    right: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    i{
+      padding: 0 1px;
+    }
+  }
+  .voice_part{
+    display: none;
+    top: 39%;
+    right: 36px;
+    width: 80%;
+    height: 50px;
+    background: $light;
+    @include border-radius(7px);
+  }
+}

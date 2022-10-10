@@ -64,6 +64,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/javascript/components/Carousel/Carousel.js":
+/*!********************************************************!*\
+  !*** ./src/javascript/components/Carousel/Carousel.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.prev_arrow'),\n  prevArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.next_arrow'),\n  infinite: true,\n  slidesToShow: 1,\n  slidesToScroll: 1,\n  autoplay: true,\n  autoplaySpeed: 2000\n});\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/javascript/components/Carousel/Carousel.js?");
+
+/***/ }),
+
 /***/ "./src/javascript/components/Menu/Alpine.menu.js":
 /*!*******************************************************!*\
   !*** ./src/javascript/components/Menu/Alpine.menu.js ***!
@@ -82,7 +93,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var _alpinejs_persist__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @alpinejs/persist */ \"./node_modules/@alpinejs/persist/dist/module.esm.js\");\n/* harmony import */ var _components_Canvas_Alpine_canvas_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Canvas/Alpine.canvas.js */ \"./src/javascript/components/Canvas/Alpine.canvas.js\");\n/* harmony import */ var _components_Canvas_Alpine_canvas_menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Canvas/Alpine.canvas.menu.js */ \"./src/javascript/components/Canvas/Alpine.canvas.menu.js\");\n/* harmony import */ var _components_Menu_Alpine_menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Menu/Alpine.menu.js */ \"./src/javascript/components/Menu/Alpine.menu.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _images_title_logo_sm_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/title_logo_sm.png */ \"./src/images/title_logo_sm.png\");\n/* harmony import */ var _images_title_logo_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../images/title_logo.png */ \"./src/images/title_logo.png\");\n/* harmony import */ var _images_crypto_news_logo_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../images/crypto_news_logo.png */ \"./src/images/crypto_news_logo.png\");\n/* harmony import */ var _images_security_coin_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../images/security_coin.png */ \"./src/images/security_coin.png\");\n/* harmony import */ var _images_industry_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../images/industry.png */ \"./src/images/industry.png\");\n/* harmony import */ var _images_technology_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../images/technology.png */ \"./src/images/technology.png\");\n/* harmony import */ var _images_btc_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../images/btc.png */ \"./src/images/btc.png\");\n/* harmony import */ var _images_eth_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../images/eth.png */ \"./src/images/eth.png\");\n/* harmony import */ var _images_crd_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../images/crd.png */ \"./src/images/crd.png\");\n/* harmony import */ var _images_meta_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../images/meta.png */ \"./src/images/meta.png\");\n/* harmony import */ var _images_nft_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../images/nft.png */ \"./src/images/nft.png\");\n/* harmony import */ var _images_rip_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../images/rip.png */ \"./src/images/rip.png\");\n/* harmony import */ var _images_sol_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../images/sol.png */ \"./src/images/sol.png\");\n/* harmony import */ var _images_man_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../images/man.svg */ \"./src/images/man.svg\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_responsive_scss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../scss/responsive.scss */ \"./src/scss/responsive.scss\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /////////////////////////////////////////////////////////////////////////////////////////\n\njquery__WEBPACK_IMPORTED_MODULE_5___default()('.single-item').slick({\n  nextArrow: jquery__WEBPACK_IMPORTED_MODULE_5___default()('.prev_arrow'),\n  prevArrow: jquery__WEBPACK_IMPORTED_MODULE_5___default()('.next_arrow'),\n  infinite: true,\n  slidesToShow: 1,\n  slidesToScroll: 1,\n  autoplay: true,\n  autoplaySpeed: 2000\n});\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].plugin(_alpinejs_persist__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].data('canvasMenu', _components_Canvas_Alpine_canvas_menu_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].data('canvas', _components_Canvas_Alpine_canvas_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].data('menu', _components_Menu_Alpine_menu_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].start();\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/javascript/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _alpinejs_persist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @alpinejs/persist */ \"./node_modules/@alpinejs/persist/dist/module.esm.js\");\n/* harmony import */ var _components_Canvas_Alpine_canvas_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Canvas/Alpine.canvas.js */ \"./src/javascript/components/Canvas/Alpine.canvas.js\");\n/* harmony import */ var _components_Canvas_Alpine_canvas_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Canvas/Alpine.canvas.menu.js */ \"./src/javascript/components/Canvas/Alpine.canvas.menu.js\");\n/* harmony import */ var _components_Menu_Alpine_menu_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Menu/Alpine.menu.js */ \"./src/javascript/components/Menu/Alpine.menu.js\");\n/* harmony import */ var _components_Carousel_Carousel__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Carousel/Carousel */ \"./src/javascript/components/Carousel/Carousel.js\");\n/* harmony import */ var _images_title_logo_sm_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../images/title_logo_sm.png */ \"./src/images/title_logo_sm.png\");\n/* harmony import */ var _images_title_logo_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../images/title_logo.png */ \"./src/images/title_logo.png\");\n/* harmony import */ var _images_crypto_news_logo_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../images/crypto_news_logo.png */ \"./src/images/crypto_news_logo.png\");\n/* harmony import */ var _images_security_coin_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../images/security_coin.png */ \"./src/images/security_coin.png\");\n/* harmony import */ var _images_industry_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../images/industry.png */ \"./src/images/industry.png\");\n/* harmony import */ var _images_technology_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../images/technology.png */ \"./src/images/technology.png\");\n/* harmony import */ var _images_btc_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../images/btc.png */ \"./src/images/btc.png\");\n/* harmony import */ var _images_eth_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../images/eth.png */ \"./src/images/eth.png\");\n/* harmony import */ var _images_crd_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../images/crd.png */ \"./src/images/crd.png\");\n/* harmony import */ var _images_meta_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../images/meta.png */ \"./src/images/meta.png\");\n/* harmony import */ var _images_nft_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../images/nft.png */ \"./src/images/nft.png\");\n/* harmony import */ var _images_rip_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../images/rip.png */ \"./src/images/rip.png\");\n/* harmony import */ var _images_sol_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../images/sol.png */ \"./src/images/sol.png\");\n/* harmony import */ var _images_man_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../images/man.svg */ \"./src/images/man.svg\");\n/* harmony import */ var _images_man_1_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../images/man-1.svg */ \"./src/images/man-1.svg\");\n/* harmony import */ var _images_man_2_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../images/man-2.svg */ \"./src/images/man-2.svg\");\n/* harmony import */ var _images_man_3_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../images/man-3.svg */ \"./src/images/man-3.svg\");\n/* harmony import */ var _images_girl_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../images/girl.svg */ \"./src/images/girl.svg\");\n/* harmony import */ var _images_girl_1_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../images/girl-1.svg */ \"./src/images/girl-1.svg\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_responsive_scss__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../scss/responsive.scss */ \"./src/scss/responsive.scss\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n /////////////////////////////////////////////////////////////////////////////////////////\n\njquery__WEBPACK_IMPORTED_MODULE_1___default()('.single-item').slick(_components_Carousel_Carousel__WEBPACK_IMPORTED_MODULE_7__[\"default\"]);\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].plugin(_alpinejs_persist__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].data('canvasMenu', _components_Canvas_Alpine_canvas_menu_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].data('canvas', _components_Canvas_Alpine_canvas_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].data('menu', _components_Menu_Alpine_menu_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].start();\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/javascript/main.js?");
 
 /***/ }),
 
@@ -180,7 +191,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1665352159691\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/scss/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1665435667604\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/scss/main.scss?");
 
 /***/ }),
 
@@ -191,7 +202,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1665350714093\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/scss/responsive.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1665435667536\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/scss/responsive.scss?");
 
 /***/ }),
 
@@ -420,6 +431,28 @@ eval("module.exports = __webpack_require__.p + \"assets/eth.png\";\n\n//# source
 
 /***/ }),
 
+/***/ "./src/images/girl-1.svg":
+/*!*******************************!*\
+  !*** ./src/images/girl-1.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/girl-1.svg\";\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/images/girl-1.svg?");
+
+/***/ }),
+
+/***/ "./src/images/girl.svg":
+/*!*****************************!*\
+  !*** ./src/images/girl.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/girl.svg\";\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/images/girl.svg?");
+
+/***/ }),
+
 /***/ "./src/images/industry.png":
 /*!*********************************!*\
   !*** ./src/images/industry.png ***!
@@ -428,6 +461,39 @@ eval("module.exports = __webpack_require__.p + \"assets/eth.png\";\n\n//# source
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"assets/industry.png\";\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/images/industry.png?");
+
+/***/ }),
+
+/***/ "./src/images/man-1.svg":
+/*!******************************!*\
+  !*** ./src/images/man-1.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/man-1.svg\";\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/images/man-1.svg?");
+
+/***/ }),
+
+/***/ "./src/images/man-2.svg":
+/*!******************************!*\
+  !*** ./src/images/man-2.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/man-2.svg\";\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/images/man-2.svg?");
+
+/***/ }),
+
+/***/ "./src/images/man-3.svg":
+/*!******************************!*\
+  !*** ./src/images/man-3.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/man-3.svg\";\n\n//# sourceURL=webpack://crypto-currency-weblog-project/./src/images/man-3.svg?");
 
 /***/ }),
 
@@ -624,7 +690,7 @@ eval("module.exports = __webpack_require__.p + \"assets/title_logo_sm.png\";\n\n
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("c2fa8e3c875de656e387")
+/******/ 		__webpack_require__.h = () => ("96b18918b2e42eddeb19")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

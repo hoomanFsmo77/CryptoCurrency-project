@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.config.js",
-    "prod": "webpack --config webpack.prod.config.js",
-    "article": "sass --watch ./src/javascript/components/Article/Article.scss:./src/javascript/components/Article/Article.css"
+    "prod": "webpack --config webpack.prod.config.js"
   },
   "keywords": [],
   "author": "hooman mousavi <hoomanmousavi77@gmail.com> (https://hoomanmousavi.ir/)",

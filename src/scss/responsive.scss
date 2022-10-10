@@ -47,6 +47,11 @@
       }
     }
   }
+  #main {
+    .container{
+      @include grid(g-i,1fr,auto,center,center);
+    }
+  }
 }
 
 
