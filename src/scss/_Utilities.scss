@@ -705,6 +705,11 @@ a.btn-link.btn-stretch{
     content: "";
   }
 }
+a.btn-link.btn-bold{
+  &:hover{
+    background-size: 100% 8% !important;
+  }
+}
 ///////////////// tags
 %tag{
   display: inline-block;

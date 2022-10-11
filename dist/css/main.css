@@ -2703,6 +2703,10 @@ a.btn-link.btn-stretch:after {
   content: "";
 }
 
+a.btn-link.btn-bold:hover {
+  background-size: 100% 8% !important;
+}
+
 .cat-warning, .cat-success, .cat-dark, .cat-info, .cat-blue, .tag_warning, .tag_info, .tag_success, .tag_blue {
   display: inline-block;
   padding: 8px;

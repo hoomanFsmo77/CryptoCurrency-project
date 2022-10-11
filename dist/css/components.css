@@ -2703,6 +2703,10 @@ a.btn-link.btn-stretch:after {
   content: "";
 }
 
+a.btn-link.btn-bold:hover {
+  background-size: 100% 8% !important;
+}
+
 .cat-warning, .cat-success, .cat-dark, .cat-info, .cat-blue, .tag_warning, .tag_info, .tag_success, .tag_blue {
   display: inline-block;
   padding: 8px;
@@ -13224,14 +13228,65 @@ readers do not read off random characters that represent icons */
 .highlight_card .video_part i {
   padding: 0 1px;
 }
+.highlight_card .shadow {
+  display: none;
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  z-index: 0;
+}
+.highlight_card .card_category {
+  z-index: 1;
+}
 .highlight_card .voice_part {
   display: none;
   top: 39%;
-  right: 36px;
+  right: 49px;
   width: 80%;
-  height: 50px;
+  height: 60px;
   background: #fff;
   border-radius: 7px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+}
+.highlight_card .pause, .highlight_card .mute {
+  display: none;
+}
+.highlight_card .play, .highlight_card .pause, .highlight_card .volume, .highlight_card .mute {
+  transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  -webkit-transition: all 150ms linear;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+.highlight_card .play:hover, .highlight_card .pause:hover, .highlight_card .volume:hover, .highlight_card .mute:hover {
+  background: rgb(41, 171, 225);
+}
+.highlight_card .play:hover svg, .highlight_card .pause:hover svg, .highlight_card .volume:hover svg, .highlight_card .mute:hover svg {
+  fill: #fff;
+}
+.highlight_card .progress {
+  display: inline-block;
+  top: 2px;
+  height: 5px;
+  right: -2px;
+  z-index: 0;
+  left: 3px;
+  background-color: #ccc;
+  width: 95%;
+}
+.highlight_card input[type=range] {
+  appearance: none;
+  height: 6px;
+  z-index: 3;
+  background-color: transparent;
 }
