@@ -72,6 +72,9 @@
       margin: auto!important;
     }
   }
+  #main main button{
+    width: 40% !important;
+  }
 }
 
 @include query(md){  ////max-width: 768px
@@ -88,6 +91,9 @@
     li:first-child .sub_menu{
       grid-template-columns: 1fr !important;
     }
+  }
+  #main main button{
+    width: 90% !important;
   }
 }
 

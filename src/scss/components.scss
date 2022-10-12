@@ -115,8 +115,8 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   .voice_part{
     display: none;
     top: 39%;
-    right: 49px;
-    width: 80%;
+    right: 30px;
+    width: 85%;
     height:60px;
     background: $light;
     @include border-radius(7px);
@@ -124,7 +124,7 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   .pause,.mute{
     display: none;
   }
-  .play,.pause,.volume,.mute{
+  .play,.pause,.volume{
     @include transition(all 150ms linear);
     @include border-radius(7px);
     &:hover{
@@ -142,7 +142,7 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
     z-index: 0;
     left: 3px;
     background-color: #ccc;
-    width: 95%;
+    width: 84%;
   }
   input[type=range]{
   
@@ -152,4 +152,17 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
     background-color: transparent;
   }
 
+}
+///////////////////// topic
+.topic{
+  height: 65px;
+  .topic-overlay{
+    @include transition(all 500ms ease-in);
+  }
+  &:hover .topic-overlay{
+    @include transform(scale(1.1));
+  }
+  a{
+    font-size: 1.3rem;
+  }
 }

@@ -1,5 +1,3 @@
-import { timers } from "jquery";
-
 let template=document.createElement('template')
 template.innerHTML=`
                 <link rel="stylesheet" href="./css/components.css">
@@ -13,17 +11,14 @@ template.innerHTML=`
                                 <i class="bi bi-camera-video-fill text-light fs-2"></i>
                             </div>
                             <div class="shadow"></div>
-
-
-
-                            <div class="voice_part absolute p-3 align-center ">
+                            <div class="voice_part absolute px-1 py-2 align-center ">
                                
-                                <div class='play pointer d-flex align-center relative justify-center w-10'>
+                                <div class='play pointer d-flex align-center relative justify-center w-10 mr-1'>
                                 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16" >
                                             <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                                     </svg>
-                                    <svg class="absolute pause p-1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-pause-circle-fill absolute pause p-1" viewBox="0 0 16 16">
                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
                                     </svg>
 
@@ -36,7 +31,7 @@ template.innerHTML=`
                                     <input type="range" class="w-100" value="0">
                                     <span class="progress absolute "></span>
                                 </div>
-                                <div class="timer mx-3 d-flex gap-1">
+                                <div class="timer mx-1 d-flex gap-1">
                                         <span class="text-muted">
                                             00:00
                                         </span>
@@ -45,12 +40,12 @@ template.innerHTML=`
                                             00:00
                                         </span>
                                 </div>
-                                <div class="volume mx-2 d-flex align-center relative justify-center w-10 pointer h-100">
+                                <div class="volume p-1 d-flex align-center relative justify-center w-10 pointer h-100">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
                                     <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
                                 </svg>
-                                    <svg  class="absolute mute p-1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-volume-up-fill absolute mute p-1" viewBox="0 0 16 16">
                                         <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
                                         <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
                                         <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
@@ -59,7 +54,7 @@ template.innerHTML=`
                                 </div>
                                 <div class="relative d-flex align-center w-10">
                                     <input type="range" value="0" class="w-100" >
-                                    <span class="progress absolute w-90"></span>
+                                    <span class="progress absolute "></span>
                                 </div>
                             </div>
                    
@@ -68,7 +63,7 @@ template.innerHTML=`
                         </div>
                     </div>
                     <div class="crd_body mt-4">
-                        <a slot="title" href="#" class="btn-link card_title btn-bold fw-6">
+                        <a slot="title" href="#" class="btn-link card_title  fw-6">
                             <slot name="title"></slot>
                         </a>
                         <p class="text-muted mx-0 fs-09 fw-5">
@@ -89,6 +84,7 @@ template.innerHTML=`
 
 
 `
+
 let main=null
 class Highlight extends HTMLElement{
     constructor() {

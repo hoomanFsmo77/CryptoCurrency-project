@@ -13247,8 +13247,8 @@ readers do not read off random characters that represent icons */
 .highlight_card .voice_part {
   display: none;
   top: 39%;
-  right: 49px;
-  width: 80%;
+  right: 30px;
+  width: 85%;
   height: 60px;
   background: #fff;
   border-radius: 7px;
@@ -13258,7 +13258,7 @@ readers do not read off random characters that represent icons */
 .highlight_card .pause, .highlight_card .mute {
   display: none;
 }
-.highlight_card .play, .highlight_card .pause, .highlight_card .volume, .highlight_card .mute {
+.highlight_card .play, .highlight_card .pause, .highlight_card .volume {
   transition: all 150ms linear;
   -moz-transition: all 150ms linear;
   -ms-transition: all 150ms linear;
@@ -13268,10 +13268,10 @@ readers do not read off random characters that represent icons */
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
-.highlight_card .play:hover, .highlight_card .pause:hover, .highlight_card .volume:hover, .highlight_card .mute:hover {
+.highlight_card .play:hover, .highlight_card .pause:hover, .highlight_card .volume:hover {
   background: rgb(41, 171, 225);
 }
-.highlight_card .play:hover svg, .highlight_card .pause:hover svg, .highlight_card .volume:hover svg, .highlight_card .mute:hover svg {
+.highlight_card .play:hover svg, .highlight_card .pause:hover svg, .highlight_card .volume:hover svg {
   fill: #fff;
 }
 .highlight_card .progress {
@@ -13282,11 +13282,29 @@ readers do not read off random characters that represent icons */
   z-index: 0;
   left: 3px;
   background-color: #ccc;
-  width: 95%;
+  width: 84%;
 }
 .highlight_card input[type=range] {
   appearance: none;
   height: 6px;
   z-index: 3;
   background-color: transparent;
+}
+
+.topic {
+  height: 65px;
+}
+.topic .topic-overlay {
+  transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+}
+.topic:hover .topic-overlay {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+.topic a {
+  font-size: 1.3rem;
 }
