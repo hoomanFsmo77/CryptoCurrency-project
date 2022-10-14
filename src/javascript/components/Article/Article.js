@@ -1,11 +1,12 @@
 let template=document.createElement('template')
 template.innerHTML=`
             <link rel="stylesheet" href="./css/components.css">
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
             <div class="article_card w-100 radius-3 pointer relative">
                 <div class="article_bg"></div>
                 <div class="article_overlay d-flex flex-column align-start justify-end p-9">
                     <span class="feature  justify-center align-center">
-                        <i class="fa-solid fa-star"></i>
+                       <i class="bi bi-star-fill"></i>
                     </span>
                     <span class=" category fw-6">Cardano</span>
                     <h1 class="lh-1">

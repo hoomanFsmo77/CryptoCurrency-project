@@ -1,11 +1,6 @@
 @import "Variables";
 @import "Mixins";
 @import "Utilities";
-$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../../node_modules/slick-carousel/slick/slick";
 /////////////////////////////
 *{
@@ -117,6 +112,17 @@ i.changeToMoon::before{
 }
 ///////////////////////////////////// main menu
 #main_menu{
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999999999999999999;
+  @include transition(all 500ms ease-in-out);
+  &.active{
+    position: fixed!important;
+    background: white;
+    @include box-shadow(0 0 40px rgba(0,0,0,0.3));
+  }
   .menu_item{
     font-size: 0.9rem;
     font-weight: 500;
@@ -211,7 +217,7 @@ i.changeToMoon::before{
   top: 0;
   right: 0;
   background: $light;
-  z-index: 99999;
+  z-index: 99999999999999999999999999;
   @include transform(translateX(1000px));
   @include transition(all 400ms linear);
   ul li a{
@@ -228,7 +234,7 @@ i.changeToMoon::before{
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.3);
-  z-index: 999;
+  z-index: 9999999999999999999999999;
   width: 100%;
   height: 100%;
 }
@@ -246,6 +252,7 @@ i.changeToMoon::before{
   aside {
     h1{
       text-align: start;
+      font-size: 1.3rem;
     }
 
   }

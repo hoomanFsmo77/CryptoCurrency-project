@@ -9,8 +9,9 @@
     <meta name="description" content="welcome Multi Coin website">
     <meta name="keyword" content="HTML,CSS,Js developer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<script defer src="main.6382ffa79d26a658f7ba.js"></script><script defer src="components.e6d25e53e5b7916522e9.js"></script><link href="css/main.css" rel="stylesheet"><link href="css/components.css" rel="stylesheet"></head>
-<body>
+    <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
+<script defer src="main.7ad4a0216c55cb799bbf.js"></script><script defer src="components.16bb694b3521513a576c.js"></script><link href="css/main.css" rel="stylesheet"><link href="css/components.css" rel="stylesheet"></head>
+<body  x-data >
 <header>
     <nav id="top_nav" class="d-block d-lg-none">
         <div class="container px-1 pb-1 d-flex justify-between align-center">
@@ -36,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <nav id="main_menu" class="relative"  x-data="{collapse:false}" :style="collapse && {borderBottom:'1px solid #ccc'}">
+    <nav id="main_menu"   x-data="effect" x-bind="scrollTrigger" :class="effect && 'active'" :style="collapse && {borderBottom: '1px solid #ccc'}">
         <div class="container d-flex justify-between p-2 ">
             <div class="brand_logo d-flex align-center py-4">
                 <img src="./assets/title_logo.png" alt="" width="50">
@@ -525,7 +526,7 @@
 
             </div>
             <div class="trending my-6 w-100">
-                <h1 class="fs-3">Trending Topics</h1>
+                <h1 class="">Trending Topics</h1>
                 <trend-topic img-src="https://v2.cimg.co/news/90594/226946/responsive-images/adobestock-32635219___media_library_original_600_400.jpeg"
                              title="Cybercrime"
                 ></trend-topic>
@@ -534,6 +535,37 @@
                 <trend-topic img-src="https://v2.cimg.co/news/90598/226948/responsive-images/adobestock-jhvephoto-1___media_library_original_600_372.jpeg" title="Corona"></trend-topic>
                 <trend-topic img-src="https://v2.cimg.co/news/90457/226733/responsive-images/adobestock-ugiss-1___media_library_original_600_400.jpeg" title="Government policy"></trend-topic>
                 <trend-topic img-src="https://v2.cimg.co/news/90319/226424/responsive-images/adobestock-179531844___media_library_original_600_312.jpeg" title="Ethereum"></trend-topic>
+
+            </div>
+            <div class="recent_post w-100 mb-6">
+                <h1 class="">Recent Posts</h1>
+
+                <recent-post img-src="https://v2.cimg.co/news/90930/227737/responsive-images/xrp-price-prediction-3-reasons-why-xrp-can-hit-5-in-2023___media_library_original_600_400.jpg"
+                date="May 17, 2022"><span slot="title">Lorem ipsum dolor sit amet, consectetur.</span></recent-post>
+
+                <recent-post img-src="https://v2.cimg.co/news/90954/227781/responsive-images/adobestock-pixarno-1-1-media-library-original-1200-800___media_library_original_600_400.jpg"
+                             date="May 17, 2022"><span slot="title">Lorem ipsum dolor sit amet, consectetur.
+                </span>
+                </recent-post>
+
+
+                <recent-post img-src="https://v2.cimg.co/news/90884/227676/responsive-images/tama-nft-cards___media_library_original_600_413.jpg"
+                             date="May 17, 2022"><span slot="title">Lorem ipsum dolor sit amet, consectetur.
+                </span>
+                </recent-post>
+
+
+
+
+                <recent-post img-src="https://v2.cimg.co/news/90886/227680/responsive-images/adobestock-484969704-editorial-use-only___media_library_original_600_400.jpeg"
+                             date="May 17, 2022"><span slot="title">Lorem ipsum dolor sit amet, consectetur.
+                </span>
+                </recent-post>
+
+                <recent-post img-src="https://v2.cimg.co/news/70601/63115/responsive-images/adobestock-480408666___media_library_original_600_400.jpg"
+                             date="May 17, 2022"><span slot="title">Lorem ipsum dolor sit amet, consectetur.
+                </span>
+                </recent-post>
 
             </div>
         </aside>

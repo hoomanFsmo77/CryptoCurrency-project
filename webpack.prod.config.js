@@ -4,9 +4,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports={
-    entry: './src/javascript/main.js',
+    entry: {
+        "main":'./src/javascript/main.js',
+        "components":"./src/javascript/components"
+    },
     output: {
-        filename: "bundle[contenthash].js",
+        filename: "[name].[contenthash].js",
         path: path.resolve(__dirname,'./dist'),
         assetModuleFilename: 'assets/[name][ext]'
     },
@@ -37,18 +40,18 @@ module.exports={
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
             {
-                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                test: /\.(eot|woff|woff2|ttf)$/,
                 type: 'asset/inline'
             }
         ]
     },
     plugins: [new MiniCssExtractPlugin({
-        filename:'css/bundle[contenthash].css'
+        filename:'css/[name].css',
     }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: "index.html",
-            publicPath:"./dist/"
+            // publicPath:"./dist/"
         }),
         new TerserPlugin()
     ]
