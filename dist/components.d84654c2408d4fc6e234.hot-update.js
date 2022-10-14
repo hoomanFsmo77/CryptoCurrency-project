@@ -7,11 +7,11 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-self["webpackHotUpdatecrypto_currency_weblog_project"]("main",{},
+self["webpackHotUpdatecrypto_currency_weblog_project"]("components",{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("4554f7db5422a72c8075")
+/******/ 	__webpack_require__.h = () => ("09b5719a759ff72226ff")
 /******/ })();
 /******/ 
 /******/ }
