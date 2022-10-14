@@ -2954,6 +2954,10 @@ a.btn-link.btn-bold:hover {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
 }
@@ -3352,6 +3356,16 @@ i.changeToMoon::before {
 #main .followers .youtube {
   background: #ff0000;
   color: #fff;
+}
+
+.scrollTop {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 /*!*******************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/responsive.scss ***!

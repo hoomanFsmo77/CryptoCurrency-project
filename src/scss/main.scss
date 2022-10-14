@@ -7,8 +7,12 @@
   font-family: "Roboto Slab", sans-serif;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background: #fff;
+
 }
 /////////////////// top menu
 #top_nav{
@@ -275,4 +279,13 @@ i.changeToMoon::before{
     }
   }
 
+}
+//////////////////////// scroll top
+
+.scrollTop{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  @include border-radius(50%);
 }
