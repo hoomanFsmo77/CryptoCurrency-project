@@ -7,6 +7,7 @@ import canvasMenu from './components/Canvas/Alpine.canvas.menu.js'
 import menu from './components/Menu/Alpine.menu.js';
 import effect from './components/Menu/Alpine.effect.js'
 import slider from './components/Carousel/Carousel';
+import sponsore from './components/Sponsore/Sponsore.slider';
 import '../images/title_logo_sm.png'
 import '../images/title_logo.png';
 import '../images/crypto_news_logo.png';
@@ -31,6 +32,7 @@ import '../scss/main.scss';
 import '../scss/responsive.scss';
 /////////////////////////////////////////////////////////////////////////////////////////
 $('.single-item').slick(slider);
+$('.sponsore_container').slick(sponsore);
 window.Alpine=Alpine
 Alpine.plugin(persist)
 Alpine.data('canvasMenu',canvasMenu)

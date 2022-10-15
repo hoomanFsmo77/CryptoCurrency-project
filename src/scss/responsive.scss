@@ -95,6 +95,13 @@
   #main main button{
     width: 90% !important;
   }
+  .spon_prev,.spon_next{
+    display: none!important;
+  }
+  .slick-slide.slick-current.slick-active{
+    display: flex!important;
+    justify-content: center!important;
+  }
 }
 
 

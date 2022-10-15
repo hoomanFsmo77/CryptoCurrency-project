@@ -294,3 +294,22 @@ i.changeToMoon::before{
   height: 2px;
   background: $primary_op2;
 }
+///////////////////// sponsored item
+////////////////////
+#sponsored{
+  .spon_next{
+    right: 0;
+    z-index: 9999;
+    border-radius: 50%;
+    bottom: 50%;
+    display: flex;
+  }
+  .spon_prev{
+    left: 0;
+    z-index: 9999;
+    border-radius: 50%;
+    bottom: 50%;
+    display: flex;
+  }
+
+}

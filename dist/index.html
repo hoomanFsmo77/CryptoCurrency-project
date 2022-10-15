@@ -10,7 +10,7 @@
     <meta name="keyword" content="HTML,CSS,Js developer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
-<script defer src="main.a18eaf1d2d5b531e0fd3.js"></script><script defer src="components.3dd89b153b7f4d2332e1.js"></script><link href="css/main.css" rel="stylesheet"><link href="css/components.css" rel="stylesheet"></head>
+<script defer src="main.1d909933cc2338e576a9.js"></script><script defer src="components.15e21da92ce0f3cdf5e7.js"></script><link href="css/main.css" rel="stylesheet"><link href="css/components.css" rel="stylesheet"></head>
 <body  x-data >
 <header>
     <nav id="top_nav" class="d-block d-lg-none">
@@ -401,7 +401,6 @@
         </div>
     </div>
 </section>
-
 <section id="main" class="mt-12">
     <div class="container gap-2">
         <main>
@@ -479,7 +478,6 @@
 
                 </button>
             </div>
-            <div class="section_divider mb-5"></div>
         </main>
         <aside class="p-2 w-100 h-100 d-flex flex-column align-center ">
             <div class="followers d-flex gap-1">
@@ -575,10 +573,108 @@
                 </a>
             </div>
         </aside>
+
     </div>
 </section>
+<section>
+    <div class="container">
+        <div class="section_divider mb-5"></div>
+    </div>
+</section>
+<section id="sponsored" class="mt-8 pb-5">
+    <div class="container">
+        <div class="d-flex align-center gap-2 ">
+            <i class="bi bi-megaphone fs-4"></i>
+            <h1 class="fs-4">Sponsored News</h1>
+        </div>
+        <div class="mt-5 o-hidden w-100 relative">
+            <div class="absolute spon_next p-3  align-center pointer bg-primary-op2 bg-blue-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
 
+            <div class="w-100 d-flex sponsore_container">
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90914/227703/responsive-images/shiba-inu___media_library_original_600_337.jpg"
+                        author_name="hooman"
+                        icon="./assets/man.svg"
+                        date="DEC 28, 2022"
+                        cat-name="Bitcoin"
+                        cat-type="cat-blue"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90955/227782/responsive-images/image0-18___media_library_original_600_365.jpg"
+                        author_name="hooman"
+                        icon="./assets/man-1.svg"
+                        date="DEC 28, 2022"
+                        cat-name="NFT"
+                        cat-type="cat-info"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90940/227741/responsive-images/tether___media_library_original_600_337.jpeg"
+                        author_name="hooman"
+                        icon="./assets/man-2.svg"
+                        date="DEC 28, 2022"
+                        cat-name="Cybercrime"
+                        cat-type="cat-dark"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90917/227710/responsive-images/binance-logo___media_library_original_600_400.jpeg"
+                        author_name="hooman"
+                        icon="./assets/man-3.svg"
+                        date="DEC 28, 2022"
+                        cat-name="Binance"
+                        cat-type="cat-success"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90886/227680/responsive-images/adobestock-484969704-editorial-use-only___media_library_original_600_400.jpeg"
+                        author_name="hooman"
+                        icon="./assets/man-3.svg"
+                        date="DEC 28, 2022"
+                        cat-name="Corona"
+                        cat-type="cat-warning"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90954/227781/responsive-images/adobestock-pixarno-1-1-media-library-original-1200-800___media_library_original_600_400.jpg"
+                        author_name="hooman"
+                        icon="./assets/girl.svg"
+                        date="DEC 28, 2022"
+                        cat-name="Economy"
+                        cat-type="cat-info"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+                <sponsore-news
+                        img="https://v2.cimg.co/news/90732/227246/responsive-images/adobestock-rh2010-1___media_library_original_600_400.jpeg"
+                        author_name="hooman"
+                        icon="./assets/girl-1.svg"
+                        date="DEC 28, 2022"
+                        cat-name="Meta-verse"
+                        cat-type="cat-warning"
+                >
+                    <span slot="title">Lorem ipsum dolor sit amet, conetur adicing.</span>
+                </sponsore-news>
+            </div>
+            <div class="spon_prev absolute p-3  align-center pointer bg-primary-op2 bg-blue-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+            </div>
 
+        </div>
+    </div>
+</section>
 
 
 

@@ -3373,6 +3373,21 @@ i.changeToMoon::before {
   height: 2px;
   background: rgba(41, 171, 225, 0.2);
 }
+
+#sponsored .spon_next {
+  right: 0;
+  z-index: 9999;
+  border-radius: 50%;
+  bottom: 50%;
+  display: flex;
+}
+#sponsored .spon_prev {
+  left: 0;
+  z-index: 9999;
+  border-radius: 50%;
+  bottom: 50%;
+  display: flex;
+}
 /*!*******************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/responsive.scss ***!
   \*******************************************************************************************************************/
@@ -3468,5 +3483,12 @@ i.changeToMoon::before {
   }
   #main main button {
     width: 90% !important;
+  }
+  .spon_prev, .spon_next {
+    display: none !important;
+  }
+  .slick-slide.slick-current.slick-active {
+    display: flex !important;
+    justify-content: center !important;
   }
 }

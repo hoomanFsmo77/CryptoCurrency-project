@@ -3029,3 +3029,24 @@ a.btn-link.btn-bold:hover {
 .topic a {
   font-size: 1.3rem;
 }
+
+.sponsored_item {
+  width: 240px !important;
+}
+
+.item_content {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.item_content a.btn-link {
+  font-size: 1.1rem;
+}
+
+.date {
+  font-size: 0.8rem !important;
+}
+
+.author_name {
+  font-size: 0.9rem !important;
+}
