@@ -80,7 +80,16 @@ button.border-dark,a.border-dark{
     border-left-color: $dark;
   }
 }
-
+button.border-light,a.border-light{
+  &::before{
+    border-top-color: $light;
+    border-bottom-color: $light;
+  }
+  &::after{
+    border-right-color: $light;
+    border-left-color: $light;
+  }
+}
 button.btn-sm,a.btn-sm{
   font-size: 0.9rem!important;
   width: 104px;
@@ -90,6 +99,12 @@ button.btn-sm,a.btn-sm{
 
 .bg-primary{
   background: $primary!important;
+}
+.bg-dark{
+  background: $dark;
+}
+.text-gray{
+  color: $gray;
 }
 .text-primary{
   color: $primary!important;
@@ -492,8 +507,8 @@ $wd:0.1;$cf:10;
     -webkit-flex-direction: row!important;
   }
   .flex-lg-column{
-    flex-direction:row !important;
-    -webkit-flex-direction: row!important;
+    flex-direction:column !important;
+    -webkit-flex-direction: column!important;
   }
   .flex-lg-reverse{
     flex-direction:row-reverse !important;
@@ -629,6 +644,18 @@ input.border-success{
   border-bottom: 2px solid rgba(87, 204, 153, 0.4);
   &:focus{
     border-bottom-color:$success ;
+  }
+}
+input.border-primary{
+  border-bottom: 2px solid $primary_op2;
+  &:focus{
+    border-bottom-color:$primary ;
+  }
+}
+input.border-info{
+  border-bottom: 2px solid $info_op2;
+  &:focus{
+    border-bottom-color:$info ;
   }
 }
 //////////////////

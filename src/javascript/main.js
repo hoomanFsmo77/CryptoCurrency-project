@@ -27,7 +27,9 @@ import '../images/man-2.svg';
 import '../images/man-3.svg';
 import '../images/girl.svg';
 import '../images/girl-1.svg';
-import '../images/ad.png'
+import '../images/ad.png';
+import '../images/g-play.svg';
+import '../images/app-store.svg'
 import '../scss/main.scss';
 import '../scss/responsive.scss';
 /////////////////////////////////////////////////////////////////////////////////////////

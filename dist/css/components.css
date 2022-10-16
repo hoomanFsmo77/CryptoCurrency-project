@@ -84,6 +84,15 @@ button.border-dark::after, a.border-dark::after {
   border-left-color: #333;
 }
 
+button.border-light::before, a.border-light::before {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+button.border-light::after, a.border-light::after {
+  border-right-color: #fff;
+  border-left-color: #fff;
+}
+
 button.btn-sm, a.btn-sm {
   font-size: 0.9rem !important;
   width: 104px;
@@ -92,6 +101,14 @@ button.btn-sm, a.btn-sm {
 
 .bg-primary {
   background: rgb(41, 171, 225) !important;
+}
+
+.bg-dark {
+  background: #333;
+}
+
+.text-gray {
+  color: rgb(146, 144, 149);
 }
 
 .text-primary {
@@ -2422,8 +2439,8 @@ button.btn-sm, a.btn-sm {
     -webkit-flex-direction: row !important;
   }
   .flex-lg-column {
-    flex-direction: row !important;
-    -webkit-flex-direction: row !important;
+    flex-direction: column !important;
+    -webkit-flex-direction: column !important;
   }
   .flex-lg-reverse {
     flex-direction: row-reverse !important;
@@ -2608,6 +2625,20 @@ input.border-success {
 }
 input.border-success:focus {
   border-bottom-color: #57cc99;
+}
+
+input.border-primary {
+  border-bottom: 2px solid rgba(41, 171, 225, 0.2);
+}
+input.border-primary:focus {
+  border-bottom-color: rgb(41, 171, 225);
+}
+
+input.border-info {
+  border-bottom: 2px solid rgba(242, 112, 89, 0.2);
+}
+input.border-info:focus {
+  border-bottom-color: #f27059;
 }
 
 .text-center {
