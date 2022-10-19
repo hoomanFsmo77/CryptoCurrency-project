@@ -2714,11 +2714,11 @@ a.btn-link {
   background-size: 0px 6%;
   background-repeat: no-repeat;
   background-position: left 100%;
-  transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  -webkit-transition: all 500ms ease-in;
+  transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
 }
 a.btn-link:hover {
   background-size: 100% 6%;
@@ -2978,6 +2978,85 @@ a.btn-link.btn-bold:hover {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+body.dark {
+  background: #2C2C2C !important;
+}
+body.dark a, body.dark p, body.dark span, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+  color: #a1a1a8 !important;
+}
+body.dark .blue_hover:hover, body.dark .blue_hover:hover * {
+  color: rgb(41, 171, 225) !important;
+}
+body.dark nav {
+  background: #2C2C2C;
+}
+body.dark .dark_switcher .fa-sun {
+  box-shadow: 0 0px 6px #ccc !important;
+  -moz-box-shadow: 0 0px 6px #ccc !important;
+  -o-box-shadow: 0 0px 6px #ccc !important;
+  -webkit-box-shadow: 0 0px 6px #ccc !important;
+}
+body.dark a.btn.border-dark::before, body.dark button.btn.border-dark::before {
+  border-top-color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+body.dark a.btn.border-dark::after, body.dark button.btn.border-dark::after {
+  border-right-color: #fff !important;
+  border-left-color: #fff !important;
+}
+body.dark button.btn, body.dark a.btn-link, body.dark a.btn {
+  color: #fff !important;
+}
+body.dark #canvas {
+  background: rgb(25, 26, 31);
+}
+body.dark i.bi {
+  color: rgb(146, 144, 149);
+}
+body.dark .canvas_menu span {
+  background: rgb(41, 171, 225) !important;
+}
+body.dark .brand_logo * {
+  color: #fff !important;
+}
+body.dark .search_bar {
+  background: black !important;
+}
+body.dark .search_bar input {
+  background: transparent !important;
+  color: #a1a1a8 !important;
+}
+body.dark .search_bar input::placeholder {
+  color: #a1a1a8 !important;
+}
+body.dark .sub_menu:not(.menu_pic), body.dark .sub_menu:not(.menu_pic) ul {
+  background: black !important;
+}
+body.dark .badge {
+  color: #fff !important;
+}
+body.dark .tag_blue, body.dark .tag_success, body.dark .tag_info, body.dark .tag_warning {
+  color: #fff !important;
+}
+body.dark span[slot=title], body.dark span[slot=author], body.dark span[slot=date], body.dark span[slot=time] {
+  color: #fff !important;
+}
+body.dark #main h1, body.dark #main i, body.dark #sponsored h1, body.dark #sponsored i {
+  color: #fff !important;
+}
+body.dark .followers * {
+  color: #fff !important;
+}
+body.dark footer *:not(.blue_hover, .text-gray, i, input) {
+  color: #fff !important;
+}
+body.dark footer input {
+  color: #2C2C2C !important;
+}
+body.dark footer input::placeholder {
+  color: #2C2C2C !important;
 }
 
 * {

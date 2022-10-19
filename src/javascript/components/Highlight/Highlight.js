@@ -105,7 +105,7 @@ class Highlight extends HTMLElement{
         this.checkVoice=this.getAttribute('is-voice')
         this.shadowRoot.querySelector('.play').addEventListener('click',this.playHandler)
         this.shadowRoot.querySelector('.volume').addEventListener('click',this.volumHandler)
-    
+
     }
     playHandler(){
         let audio=this.querySelector('#audio')

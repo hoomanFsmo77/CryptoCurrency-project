@@ -2,6 +2,88 @@
 @import "Mixins";
 @import "Utilities";
 @import "../../node_modules/slick-carousel/slick/slick";
+/////////////////////////////////
+body.dark{
+  background: $dark-light!important;
+   a,p,span,h1,h2,h3,h4,h5,h6{
+    color: $gray-light!important;
+  }
+  .blue_hover{
+    &:hover,&:hover *{
+      color: $primary!important;
+    }
+  }
+  nav{
+    background: $dark-light;
+  }
+  .dark_switcher .fa-sun{
+    @include box-shadow(0 0px 6px #ccc!important);
+  }
+  a.btn.border-dark,button.btn.border-dark{
+    &::before{
+      border-top-color: $light!important;
+      border-bottom-color: $light!important;
+    }
+    &::after{
+      border-right-color: $light!important;
+      border-left-color: $light!important;
+    }
+  }
+  button.btn,a.btn-link,a.btn{
+    color: $light!important;
+  }
+  #canvas{
+    background: $dark-darken;
+  }
+  i.bi{
+    color: $gray;
+  }
+  .canvas_menu span{
+    background: $primary!important;
+  }
+  .brand_logo *{
+    color: $light!important;
+  }
+  .search_bar{
+    background: black!important;
+    input{
+      background: transparent!important;
+      color: $gray-light!important;
+      &::placeholder{
+        color: $gray-light!important;
+      }
+    }
+  }
+  .sub_menu:not(.menu_pic),.sub_menu:not(.menu_pic) ul{
+    background: black!important;
+  }
+  .badge{
+    color: $light!important;
+  }
+  .tag_blue ,.tag_success ,.tag_info ,.tag_warning{
+    color: $light!important;
+  }
+  span[slot=title],span[slot=author],span[slot=date],span[slot=time]{
+    color: $light!important;
+  }
+  #main h1,#main i,#sponsored h1,#sponsored i{
+    color: $light!important;
+  }
+  .followers *{
+    color: $light!important;
+  }
+  footer *:not(.blue_hover,.text-gray,i,input){
+    color: $light!important;
+  }
+  footer input{
+    color: $dark-light!important;
+
+    &::placeholder{
+      color: $dark-light!important;
+    }
+  }
+
+}
 /////////////////////////////
 *{
   font-family: "Roboto Slab", sans-serif;

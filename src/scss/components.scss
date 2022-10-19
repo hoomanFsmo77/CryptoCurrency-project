@@ -2,6 +2,13 @@
 @import "Mixins";
 @import "Variables";
 ////////
+body.dark{
+  //.author_name,.card_date{
+  //  color: $light!important;
+  //}
+
+}
+//////////////////////////////
 *{
   font-family: "Roboto Slab", sans-serif;
   box-sizing: border-box;

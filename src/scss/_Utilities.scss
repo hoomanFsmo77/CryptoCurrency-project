@@ -19,6 +19,7 @@ a{
   text-decoration: none;
   color: $dark;
 }
+
 ::placeholder{
   font-size: 1rem;
 }
@@ -96,6 +97,7 @@ button.btn-sm,a.btn-sm{
   height: 34px!important;
 }
 ////////////////////// colors
+
 
 .bg-primary{
   background: $primary!important;
@@ -716,7 +718,7 @@ a.btn-link{
   background-size: 0px 6%;
   background-repeat: no-repeat;
   background-position: left 100%;
-  @include transition(all 500ms ease-in);
+  @include transition(all 500ms ease-in-out);
   &:hover{
     background-size: 100% 6%;
   }

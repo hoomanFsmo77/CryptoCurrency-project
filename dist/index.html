@@ -10,8 +10,8 @@
     <meta name="keyword" content="HTML,CSS,Js developer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/04f2094a89.js" crossorigin="anonymous"></script>
-<script defer src="main.6098e244cb5fe8fa8deb.js"></script><script defer src="components.7a09a141b88d3b5e3dad.js"></script><link href="css/main.css" rel="stylesheet"><link href="css/components.css" rel="stylesheet"></head>
-<body  x-data >
+<script defer src="main.48fcd4343ac6b96f8f2c.js"></script><script defer src="components.2081130c92421f505e3d.js"></script><link href="css/main.css" rel="stylesheet"><link href="css/components.css" rel="stylesheet"></head>
+<body  x-data="{dark:null}" @dark="dark=$event.detail.isRight" :class="dark && 'dark'">
 <header>
     <nav id="top_nav" class="d-block d-lg-none">
         <div class="container px-1 pb-1 d-flex justify-between align-center">
@@ -23,9 +23,10 @@
                     <li class="p-3 relative"><span class="absolute top-0 left-0 w-100 "></span><a class="" href="#">Login/Join</a></li>
                 </ul>
             </div>
-            <div class="d-flex gap-4 align-center right_side" x-data="{isRight:$persist(false)}" >
-                <div class="dark_switcher relative" @click="isRight=!isRight">
-                    <i  @click.stop="isRight=!isRight"  :style="isRight && {left:'29px',animation:'rotate 130ms linear 80ms'}" class="fa-solid fa-sun" :class="isRight && 'changeToMoon'"></i>
+            <div class="d-flex gap-4 align-center right_side" x-data="dark_data" >
+
+                <div class="dark_switcher relative" x-bind="trigger_1">
+                    <i  x-bind="trigger_2"   :style="isRight && {left:'29px',animation:'rotate 130ms linear 80ms'}" class="fa-solid fa-sun" :class="isRight && 'changeToMoon'"></i>
                 </div>
                 <ul class="d-flex gap-2 m-0 p-0">
                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -53,7 +54,7 @@
                             </span>
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                        <div class="sub_menu absolute p-4  grid-4"  x-bind="showSubMenu" x-transition.opacity.scale.origin.top  x-cloak>
+                        <div class="sub_menu absolute p-4  grid-4 menu_pic"  x-bind="showSubMenu" x-transition.opacity.scale.origin.top  x-cloak>
                             <ul class="d-flex flex-column align-center m-0 p-0">
                                 <li class="text-center mb-2 text-muted">
                                     <img src="./assets/crypto_news_logo.png" alt="" width="40">

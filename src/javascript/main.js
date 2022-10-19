@@ -5,7 +5,8 @@ import persist from '@alpinejs/persist';
 import canvas from './components/Canvas/Alpine.canvas.js';
 import canvasMenu from './components/Canvas/Alpine.canvas.menu.js'
 import menu from './components/Menu/Alpine.menu.js';
-import effect from './components/Menu/Alpine.effect.js'
+import effect from './components/Menu/Alpine.effect.js';
+import {dark_data} from "./components/Dark_mode/Dark.js";
 import slider from './components/Carousel/Carousel';
 import sponsore from './components/Sponsore/Sponsore.slider';
 import '../images/title_logo_sm.png'
@@ -41,4 +42,11 @@ Alpine.data('canvasMenu',canvasMenu)
 Alpine.data('canvas',canvas)
 Alpine.data('menu',menu)
 Alpine.data('effect',effect)
+Alpine.data('dark_data',dark_data)
 Alpine.start()
+
+
+window.addEventListener('storage',function(e){
+    console.log()
+    console.log(JSON.parse(window.localStorage.getItem('_x_isRight')));
+})
