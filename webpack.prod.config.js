@@ -36,10 +36,6 @@ module.exports={
                 }
             },
             {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
-            },
-            {
                 test: /\.(eot|woff|woff2|ttf)$/,
                 type: 'asset/inline'
             }
