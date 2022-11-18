@@ -1,0 +1,40 @@
+@import "../Helpers/Variables";
+@import "../Helpers/Mixins";
+@import "../Helpers/Utilities";
+
+#canvas{
+  overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+  width: 350px;
+  top: 0;
+  right: 0;
+  background: $light;
+  z-index: 99999999999999999999999999;
+  @include transform(translateX(1000px));
+  @include transition(all 400ms linear);
+  ul li a{
+    font-size: 1.3rem;
+  }
+  .premium{
+    border-radius: 5px;
+  }
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 9999999999999999999999999;
+  width: 100%;
+  height: 100%;
+}
+.close{
+  @include transform(translateX(1000px)!important)
+}
+.open{
+  @include transform(translateX(0)!important);
+
+}
