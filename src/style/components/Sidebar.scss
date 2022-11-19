@@ -1,0 +1,16 @@
+@import "../Helpers/Mixins";
+@import "../Helpers/Variables";
+
+///////////////////// topic
+.topic{
+  height: 65px;
+  .topic-overlay{
+    @include transition(all 500ms ease-in);
+  }
+  &:hover .topic-overlay{
+    @include transform(scale(1.1));
+  }
+  a{
+    font-size: 1.3rem;
+  }
+}

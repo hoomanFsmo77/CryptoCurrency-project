@@ -2,26 +2,8 @@
 @import "./Helpers/Variables";
 
 
-@include query(xlg){ ////max-width: 1200px
-  #main {
-    .container{
-      @include grid(g-i,1fr,auto,center,center);
-    }
-  }
-}
-
-
-@include query(lg){ ////max-width: 960px
-  #main main button{
-    width: 40% !important;
-  }
-}
-
 
 @include query(sm){ ////max-width: 500px
-  #main main button{
-    width: 90% !important;
-  }
   .spon_prev,.spon_next{
     display: none!important;
   }

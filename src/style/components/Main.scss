@@ -1,0 +1,56 @@
+@import "../Helpers/Mixins";
+@import "../Helpers/Variables";
+
+#main {
+  .container{
+    @include grid(g,1.6fr 0.4fr,auto,center,center);
+  }
+  aside {
+    h1{
+      text-align: start;
+      font-size: 1.3rem;
+    }
+
+  }
+  .followers{
+    .facebook{
+      background-color: #5d82d1;
+      @include transition(all 150ms linear);
+      color: $light;
+      &:hover{
+        background-color: #5378bf;
+      }
+    }
+    .instagram{
+      background:radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: $light;
+    }
+    .youtube{
+      background: #ff0000;
+      color: $light;
+    }
+  }
+
+}
+
+
+@include query(xlg){ ////max-width: 1200px
+  #main {
+    .container{
+      @include grid(g-i,1fr,auto,center,center);
+    }
+  }
+}
+
+
+@include query(lg){ ////max-width: 960px
+  #main main button{
+    width: 40% !important;
+  }
+}
+
+@include query(sm) { ////max-width: 500px
+  #main main button {
+    width: 90% !important;
+  }
+}

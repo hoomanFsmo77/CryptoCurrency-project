@@ -1,0 +1,11 @@
+@import "../Helpers/Mixins";
+@import "../Helpers/Variables";
+
+#trending_news{
+  .main_content{
+    background: $primary_op2;
+  }
+}
+#trending_news li{
+  justify-content: start!important;
+}
