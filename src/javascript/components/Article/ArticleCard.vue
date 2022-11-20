@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import '../../style/components/Article.scss'
+import '../../../style/components/Article.scss'
 
 export default {
   props:['hasFeature','category','imgSrc','height','userSrc','isSmall','grid'],

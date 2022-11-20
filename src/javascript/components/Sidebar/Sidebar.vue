@@ -59,7 +59,7 @@
     </div>
     <div class="w-100">
       <a href="#">
-        <img  class="w-100 pointer" src="../../assets/ad.png" alt="">
+        <img class="w-100 pointer" src="../../../assets/ad.png" alt="">
       </a>
     </div>
   </aside>
@@ -68,7 +68,7 @@
 <script>
 import TrendTopic from "./TrendTopic.vue";
 import RecentPost from "./RecentPost.vue";
-import useSidebar from "../composables/useSidebar.js";
+import useSidebar from "../../composables/useSidebar.js";
 
 export default {
   name: "Sidebar",

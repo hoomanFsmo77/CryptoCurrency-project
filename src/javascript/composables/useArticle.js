@@ -1,4 +1,4 @@
-import ArticleCard from "../components/ArticleCard.vue";
+import ArticleCard from "../components/Article/ArticleCard.vue";
 
 export default {
     data(){

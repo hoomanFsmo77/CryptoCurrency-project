@@ -9,7 +9,7 @@ $news:'../../assets/news-bg.jpg';
   top: 0;
   width: 100%;
   z-index: 9999999999999999999;
-  background: #fff;
+  background-color: #fff!important;
   @include transition(all 500ms ease-in-out);
   &.active{
     position: fixed!important;

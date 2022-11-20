@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import '../../style/components/Article.scss'
-import '../../assets/man.svg'
-import useArticle from "../composables/useArticle.js";
+import '../../../style/components/Article.scss'
+import '../../../assets/man.svg'
+import useArticle from "../../composables/useArticle.js";
 
 export default {
   name: "Article",

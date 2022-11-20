@@ -32,6 +32,12 @@
   }
 
 }
+/////////////////// divider
+.section_divider{
+  width: 100%;
+  height: 2px;
+  background: $primary_op2;
+}
 
 
 @include query(xlg){ ////max-width: 1200px
@@ -54,3 +60,4 @@
     width: 90% !important;
   }
 }
+

@@ -1,8 +1,8 @@
 <template>
-  <nav id="main_menu"  :class="effect && 'active'" :style="collapse && {borderBottom: '1px solid #ccc'}" >
+  <nav id="main_menu" ref="mainMenu" :class="effect && 'active'" :style="collapse && {borderBottom: '1px solid #ccc'}" >
     <div class="container d-flex justify-between p-2 ">
       <div class="brand_logo d-flex align-center py-4">
-        <img src="../../assets/title_logo.png" alt="" width="50">
+        <img src="../../../assets/title_logo.png" alt="" width="50">
         <h1 class="ml-5 fw-4 fs-3">MultiCoin</h1>
       </div>
       <div class="menu_items"  v-show="collapse">
@@ -19,7 +19,7 @@
               <div class="sub_menu absolute p-4  grid-4 menu_pic"   >
                 <ul class="d-flex flex-column align-center m-0 p-0">
                   <li class="text-center mb-2 text-muted">
-                    <img src="../../assets/crypto_news_logo.png" alt="" width="40">
+                    <img src="../../../assets/crypto_news_logo.png" alt="" width="40">
                     <h3 class="text-center fw-4 border-muted yellow_hover">Crypto News</h3>
                   </li>
                   <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Bitcoin News</a></li>
@@ -34,7 +34,7 @@
                 </ul>
                 <ul class="d-flex flex-column align-center">
                   <li class="text-center mb-2 text-muted">
-                    <img src="../../assets/security_coin.png" alt="" width="40">
+                    <img src="../../../assets/security_coin.png" alt="" width="40">
                     <h3 class="text-center fw-4 border-muted yellow_hover">Regulatory News</h3>
                   </li>
                   <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Regulation</a></li>
@@ -43,7 +43,7 @@
                 </ul>
                 <ul class="d-flex flex-column align-center">
                   <li class="text-center mb-2 text-muted">
-                    <img src="../../assets/industry.png" alt="" width="40">
+                    <img src="../../../assets/industry.png" alt="" width="40">
                     <h3 class="text-center fw-4 border-muted yellow_hover">Industry News</h3>
                   </li>
                   <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Exchanges</a></li>
@@ -52,7 +52,7 @@
                 </ul>
                 <ul class="d-flex flex-column align-center">
                   <li class="text-center mb-2 text-muted">
-                    <img src="../../assets/technology.png" alt="" width="40">
+                    <img src="../../../assets/technology.png" alt="" width="40">
                     <h4 class="text-center fw-4 border-muted yellow_hover">Technology News</h4>
                   </li>
                   <li class="mb-2  fs-09 fw-4 py-1 "><a class="text-light yellow_hover" href="#">Enterprise</a></li>
@@ -134,14 +134,14 @@
               </a>
               <div class="sub_menu absolute py-3" >
                 <ul class="m-0 p-0">
-                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../assets/btc.png" alt="">Bitcoin lorem lorem</a></li>
-                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../assets/eth.png" alt="">Ethereum lorem ipsum</a></li>
-                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../assets/crd.png" alt="">Cardano lorem</a></li>
+                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../../assets/btc.png" alt="">Bitcoin lorem lorem</a></li>
+                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../../assets/eth.png" alt="">Ethereum lorem ipsum</a></li>
+                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../../assets/crd.png" alt="">Cardano lorem</a></li>
                   <li class="divider"></li>
                   <li class="px-3 py-2   rotate relative double_sub_menu" @mouseenter="events.mouseenter" @mouseleave="events.mouseleave" @click.stop="events.click">
                     <a class="fs-09 blue_hover d-flex justify-between align-center w-100" href="#">
                                         <span class="d-flex align-center gap-1 fs-09 justify-start">
-                                            <img width="20" src="../../assets/meta.png" alt="">
+                                            <img width="20" src="../../../assets/meta.png" alt="">
                                             Meta-verse
                                             <span class="badge bg-info">New</span>
                                         </span>
@@ -155,13 +155,13 @@
                       <li class="px-3 py-2 blue_hover"><a class="fs-09" href="#">Post 4-4<span class="badge bg-info">New</span></a></li>
                     </ul>
                   </li>
-                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../assets/nft.png" alt="">NFT</a></li>
-                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../assets/rip.png" alt="">Ripple Court</a></li>
+                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../../assets/nft.png" alt="">NFT</a></li>
+                  <li class="px-3 py-2 blue_hover"><a class="fs-09 d-flex align-center gap-2" href="#"><img width="20" src="../../../assets/rip.png" alt="">Ripple Court</a></li>
                   <li class="divider"></li>
                   <li class="px-3 py-2   double_sub_menu relative" @mouseenter="events.mouseenter" @mouseleave="events.mouseleave" @click.stop="events.click">
                     <a class="fs-09 rotate blue_hover d-flex justify-between align-center" href="#">
                                         <span class="align-center d-flex  gap-2">
-                                            <img width="20" src="../../assets/sol.png" alt="">
+                                            <img width="20" src="../../../assets/sol.png" alt="">
                                             Solana
                                         </span>
 
@@ -304,8 +304,8 @@
 </template>
 
 <script>
-import '../../style/components/Navbar.scss'
-import useNavbar from "../composables/useNavbar.js";
+import '../../../style/components/Navbar.scss'
+import useNavbar from "../../composables/useNavbar.js";
 import Canvas from "./Canvas.vue";
 import {watch,ref} from "vue";
 
@@ -326,10 +326,13 @@ export default {
   },
   setup(props,context){
     const {emit}=context
-    const {events,open,collapse,effect,show,showMenu}=useNavbar(emit)
+    const {events,open,collapse,effect,show,showMenu,mainMenu}=useNavbar(emit)
 
 
-    return {events,open,collapse,effect,show,showMenu}
+    return {events,open,collapse,effect,show,showMenu,mainMenu}
+  },
+  mounted() {
+
   },
   components:{
     Canvas

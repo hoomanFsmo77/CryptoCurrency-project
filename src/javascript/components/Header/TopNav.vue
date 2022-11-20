@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import '../../style/components/TopNav.scss'
-import useTopNav from "../composables/useTopNav.js";
+import '../../../style/components/TopNav.scss'
+import useTopNav from "../../composables/useTopNav.js";
 
 
 

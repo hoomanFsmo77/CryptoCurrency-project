@@ -1,0 +1,14 @@
+
+
+footer{
+  background: rgb(25,26,31);
+  .footer_header{
+    grid-template-columns: 1fr 1.3fr 1fr;
+  }
+  .btn-link{
+    line-height: 1.5!important;
+  }
+  .footer_navigation{
+    grid-template-columns: 1fr 1.6fr 1fr;
+  }
+}

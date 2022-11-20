@@ -4,11 +4,14 @@
 /////////////////////////////////
 body.dark{
   #main_menu{
-    background:$dark-light ;
+    background-color:$dark-light !important;
   }
   background: $dark-light!important;
-   a,p,span,h1,h2,h3,h4,h5,h6{
+   a,p,h1,h2,h3,h4,h5,h6{
     color: $gray-light!important;
+  }
+  span{
+    color: $light!important;
   }
   .blue_hover{
     &:hover,&:hover *{
@@ -33,6 +36,10 @@ body.dark{
   }
   button.btn,a.btn-link,a.btn{
     color: $light!important;
+    span{
+      color: $light!important;
+
+    }
   }
   #canvas{
     background: $dark-darken;
@@ -84,6 +91,13 @@ body.dark{
       color: $dark-light!important;
     }
   }
+  .crd_body p{
+    color: $gray-light!important;
+    span{
+      color: $gray-light!important;
+
+    }
+  }
 
 }
 /////////////////////////////
@@ -101,49 +115,5 @@ body{
 
 
 
-//////////////////////// scroll top
-.scrollTop{
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  @include border-radius(50%);
-}
-/////////////////// divider
-.section_divider{
-  width: 100%;
-  height: 2px;
-  background: $primary_op2;
-}
-///////////////////// sponsored item
-////////////////////
-#sponsored{
-  .spon_next{
-    right: 0;
-    z-index: 9999;
-    border-radius: 50%;
-    bottom: 50%;
-    display: flex;
-  }
-  .spon_prev{
-    left: 0;
-    z-index: 9999;
-    border-radius: 50%;
-    bottom: 50%;
-    display: flex;
-  }
 
-}
-/////////////////// footer
-footer{
-  background: rgb(25,26,31);
-  .footer_header{
-    grid-template-columns: 1fr 1.3fr 1fr;
-  }
-  .btn-link{
-    line-height: 1.5!important;
-  }
-  .footer_navigation{
-    grid-template-columns: 1fr 1.6fr 1fr;
-  }
-}
+

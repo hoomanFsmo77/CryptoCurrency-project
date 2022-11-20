@@ -1,4 +1,4 @@
-import HighlightCard from "../components/HighlightCard.vue";
+import HighlightCard from "../components/Main/HighlightCard.vue";
 
 export default {
     components:{HighlightCard},

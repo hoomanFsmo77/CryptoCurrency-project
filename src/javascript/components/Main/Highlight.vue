@@ -38,12 +38,12 @@
 </template>
 
 <script>
-import useHighlight from "../composables/useHighlight.js";
-import '../../assets/man-1.svg';
-import '../../assets/man-2.svg';
-import '../../assets/man-3.svg';
-import '../../assets/girl.svg';
-import '../../assets/girl-1.svg';
+import useHighlight from "../../composables/useHighlight.js";
+import '../../../assets/man-1.svg';
+import '../../../assets/man-2.svg';
+import '../../../assets/man-3.svg';
+import '../../../assets/girl.svg';
+import '../../../assets/girl-1.svg';
 
 
 export default {

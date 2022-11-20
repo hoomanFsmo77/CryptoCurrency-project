@@ -92,8 +92,8 @@
 </template>
 
 <script>
-import '../../style/components/HighlightCard.scss'
-import useMusicPlayer from "../composables/useMusicPlayer.js";
+import '../../../style/components/HighlightCard.scss'
+import useMusicPlayer from "../../composables/useMusicPlayer.js";
 
 export default {
   name: "HighlightCard",

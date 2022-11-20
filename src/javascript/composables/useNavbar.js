@@ -6,7 +6,7 @@ export default (emit)=>{
     const collapse=ref(false)
     const effect=ref(false)
     const show=ref(false)
-    const main_menu=document.getElementById('main_menu')
+    const mainMenu=ref(null)
 
     const showMenu = () => {
         const menu_items=document.querySelector('.menu_items')
@@ -39,35 +39,38 @@ export default (emit)=>{
                 }
             }
         },
-        scroll:function () {
-            // if(window.scrollY > 300){
-            //     main_menu.previousElementSibling.style.opacity='0'
-            //     main_menu.children[0].classList.replace('p-2','p-0')
-            //     if(document.body.classList.contains('dark') ){
-            //         main_menu.style.backgroundColor='rgb(25,26,31)'
-            //     }else{
-            //         main_menu.style.backgroundColor='#fff'
-            //     }
-            //     effect.value=true
-            // }else{
-            //     if(document.body.classList.contains('dark') ){
-            //         main_menu.style.backgroundColor='#2C2C2C'
-            //     }else{
-            //         main_menu.style.backgroundColor='#fff'
-            //     }
-            //     main_menu.previousElementSibling.style.opacity='1'
-            //     main_menu.children[0].classList.replace('p-0','p-2')
-            //     effect.value=false
-            // }
+        scroll:function (main_menu) {
+            window.addEventListener('scroll',()=>{
+                if(window.scrollY > 300){
+                    main_menu.previousElementSibling.style.opacity='0'
+                    main_menu.children[0].classList.replace('p-2','p-0')
+                    if(document.body.classList.contains('dark') ){
+                        main_menu.style.backgroundColor='rgb(25,26,31)'
+                    }else{
+                        main_menu.style.backgroundColor='#fff'
+                    }
+                    effect.value=true
+                }else{
+                    if(document.body.classList.contains('dark') ){
+                        main_menu.style.backgroundColor='#2C2C2C'
+                    }else{
+                        main_menu.style.backgroundColor='#fff'
+                    }
+                    main_menu.previousElementSibling.style.opacity='1'
+                    main_menu.children[0].classList.replace('p-0','p-2')
+                    effect.value=false
+                }
+            })
+
 
         }
     }
     onMounted(()=>{
-        window.addEventListener('scroll',events.scroll)
+        events.scroll(mainMenu.value)
         showMenu()
     })
 
     return {
-        events,open,collapse,effect,show,showMenu
+        events,open,collapse,effect,show,showMenu,mainMenu
     }
 }

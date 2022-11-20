@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import '../../style/components/Sidebar.scss'
+import '../../../style/components/Sidebar.scss'
 
 export default {
   name: "TrendTopic",

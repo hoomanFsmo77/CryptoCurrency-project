@@ -6,7 +6,7 @@
         <i @click="closeCanvas" class="bi bi-x-lg fs-3 pointer blue_hover"></i>
       </div>
       <div class="d-flex align-center">
-        <img src="../../assets/title_logo.png" alt="" width="40">
+        <img src="../../../assets/title_logo.png" alt="" width="40">
         <h1 class="ml-5 fw-4 fs-3">MultiCoin</h1>
       </div>
       <div>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import '../../style/components/Canvas.scss';
+import '../../../style/components/Canvas.scss';
 
 
 export default {

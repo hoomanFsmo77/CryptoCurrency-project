@@ -28,9 +28,9 @@
 </template>
 
 <script>
-import '../../style/components/TrendingNews.scss';
+import '../../../style/components/TrendingNews.scss';
 import 'vue3-carousel/dist/carousel.css'
-import {sliderData,sliderConfig} from "../composables/useCarousel.js";
+import {sliderData,sliderConfig} from "../../composables/useCarousel.js";
 
 
 
